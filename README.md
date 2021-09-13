@@ -39,3 +39,5 @@ Here are the Lessons with the PowerPoint and the Lab questions for the class.
 
 ## Add Expressions by Shortcut
 1. create just a the varaiable under the variable then highlight it and hold ctrl+alt+T then you can select what expression to add it to.
+
+# Debug
