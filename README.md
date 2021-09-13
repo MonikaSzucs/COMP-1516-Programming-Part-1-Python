@@ -25,3 +25,10 @@ Here are the Lessons with the PowerPoint and the Lab questions for the class.
 2. Refractor > rename 
 3. Type in another variable name 
 4. Then click refractor
+
+## Keyboard Shortcuts
+Find: ctrl+F
+Find all changes you made: alt + Shift + C
+Duplicates items: ctrl+D
+
+##To Do List
