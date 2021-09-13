@@ -41,3 +41,9 @@ Here are the Lessons with the PowerPoint and the Lab questions for the class.
 1. create just a the varaiable under the variable then highlight it and hold ctrl+alt+T then you can select what expression to add it to.
 
 # Debug
+## Debug Tool
+1. Click on the bug icon at the top right corner near the play button (it looks like a bug)
+2. Beside the console tab at the bottom you will see a Debug tab.
+
+## Breakpoints
+1. right beside the line number you can hover and click to createa a red dot. This will create a break point for debugging later. It break the execution of the program at that point. It will stop then you will see the debugger open and list varaibles.
