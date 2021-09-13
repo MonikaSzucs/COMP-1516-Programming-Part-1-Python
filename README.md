@@ -31,4 +31,7 @@ Here are the Lessons with the PowerPoint and the Lab questions for the class.
 2. Find all changes you made: alt + Shift + C
 3. Duplicates items: ctrl+D
 
-##To Do List
+## TODO List
+1. Add comments right beside areas in the code that you know you need to work on
+2. Add the word todo beside the '#' then it will make the notes in a green/yellow color
+3. Then when you click the TODO tab then you will see all the notes you created
