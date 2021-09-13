@@ -36,3 +36,6 @@ Here are the Lessons with the PowerPoint and the Lab questions for the class.
 1. Add comments right beside areas in the code that you know you need to work on
 2. Add the word todo beside the '#' then it will make the notes in a green/yellow color
 3. Then when you click the TODO tab then you will see all the notes you created
+
+## Add Expressions by Shortcut
+1. create just a the varaiable under the variable then highlight it and hold ctrl+alt+T then you can select what expression to add it to.
