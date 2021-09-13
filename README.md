@@ -19,3 +19,9 @@ Here are the Lessons with the PowerPoint and the Lab questions for the class.
 4. If there is no options yet then click the gear icon > add
 5. Click on system interpreter and find the basic python interpreter and then click ok
 6. Then click ok for the settings 
+
+## Refractor
+1. if you make a variable name and you want to change it but its linked to many other areas in your code you can first hightlight then right click it
+2. Refractor > rename 
+3. Type in another variable name 
+4. Then click refractor
