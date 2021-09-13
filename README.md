@@ -47,3 +47,8 @@ Here are the Lessons with the PowerPoint and the Lab questions for the class.
 
 ## Breakpoints
 1. right beside the line number you can hover and click to createa a red dot. This will create a break point for debugging later. It break the execution of the program at that point. It will stop then you will see the debugger open and list varaibles.
+
+## Evaluate Expression
+1. open up the debugger
+2. then at the bottom area but above that debugger there should be a calculater looking icon. It is called Evaluating Expression
+3. You can evaluate anything in the current scope. This will show the value to see it right away to see exact value and type without printing it all the time.
