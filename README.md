@@ -27,8 +27,8 @@ Here are the Lessons with the PowerPoint and the Lab questions for the class.
 4. Then click refractor
 
 ## Keyboard Shortcuts
-Find: ctrl+F
-Find all changes you made: alt + Shift + C
-Duplicates items: ctrl+D
+1. Find: ctrl+F
+2. Find all changes you made: alt + Shift + C
+3. Duplicates items: ctrl+D
 
 ##To Do List
