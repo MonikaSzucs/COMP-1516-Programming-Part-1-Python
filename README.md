@@ -30,6 +30,7 @@ Here are the Lessons with the PowerPoint and the Lab questions for the class.
 1. Find: ctrl+F
 2. Find all changes you made: alt + Shift + C
 3. Duplicates items: ctrl+D
+4. Hold down alt and then it only selects areas within the column as you move up and down.
 
 ## TODO List
 1. Add comments right beside areas in the code that you know you need to work on
