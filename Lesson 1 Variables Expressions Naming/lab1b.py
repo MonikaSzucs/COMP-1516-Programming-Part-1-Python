@@ -1,20 +1,25 @@
-# Monika Szucs
+"""
+Lesson 1
+Monika Szucs
+"""
 
 # Part A
-first_name = input("Enter your first name:")
-print("Hello, " + first_name)
+first_name = input("Enter your first name: \n")
+print("Hello,", first_name)
 
 # Part B
 x = 5
 y = 10
 xy_sum = x + y
 print(xy_sum)
+print(x, '+', y, "=", xy_sum)
 
 # Part C
 a = 10.5
 b = 4.0
 c = a * b
 print(c)
+print(a, '*', b, "=", c)
 
 # Part D
 print(int(c) - xy_sum)
