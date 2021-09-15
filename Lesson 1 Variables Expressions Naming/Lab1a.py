@@ -1,23 +1,28 @@
-# Monika Szucs
+"""
+Lesson 1
+Monika Szucs
+"""
 
-helloWorld = "Hello World!"
+hello_world = "Hello World!"
 line = "This is my first python program!"
 breaks = "\n"
-fullSentence = ""
+full_sentence = ""
 
-print(helloWorld)
+print(hello_world)
 print(line)
 
 print(breaks)
 
-print(helloWorld + breaks + line)
+print(hello_world + breaks + line)
 
 print(breaks)
 
+
 def my_world():
-    fullSentence = helloWorld
-    fullSentence += breaks
-    fullSentence += line
-    print(fullSentence)
+    """
+    This is a function to make a sentence
+    """
+    print("%s%s%s" % (hello_world, breaks, line))
+
 
 my_world()
