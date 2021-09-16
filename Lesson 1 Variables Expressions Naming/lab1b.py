@@ -1,6 +1,5 @@
 """
-Lesson 1
-Monika Szucs
+Lab 1b by Monika Szucs
 """
 
 # Part A
