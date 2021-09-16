@@ -1,6 +1,5 @@
 """
-Lesson 1
-Monika Szucs
+Lab 1a by Monika Szucs
 """
 
 hello_world = "Hello World!"
@@ -14,7 +13,6 @@ print(line)
 print(breaks)
 
 print(hello_world + breaks + line)
-
 print(breaks)
 
 
