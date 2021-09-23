@@ -6,7 +6,6 @@ def calculate_subtotal(price, quantity_sold):
         :param quantity_sold: the number of items sold
         :return: the subtotal of unit sold, float(price) * float(quantity_sold) and formatting it to two decimal places
     """
-    # calucate subtotal amount. Multiply price of retail item times quantity sold
     subtotal = float(price) * float(quantity_sold)
     subtotal = "{:.2f}".format(subtotal)
     return subtotal
