@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7f61e86-a0a8-4901-a4e2-876e31bffdc2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Lesson 1 Variables Expressions Naming/Lab2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/retail_item.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/calculate_subtotal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/calculate_tax.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/calculate_total.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/get_number_of_purchased_items.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/get_price_per_unit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/get_retail_item_description.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/get_tax_rate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/retail_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/retail_item.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
