@@ -1,3 +1,6 @@
+"""
+Second Lab by Monika Szucs
+"""
 import utilities
 
 
