@@ -1,3 +1,10 @@
+"""
+A script to run the calculate_total() function, takes two parameters called subtotal and tax, and returns amount_total
+:author: Monika Szucs
+:date: Sept 26 2021
+"""
+
+
 def calculate_total(subtotal, tax):
     """
     a function to return the total amount that the person needs to pay based on the number of units bought,

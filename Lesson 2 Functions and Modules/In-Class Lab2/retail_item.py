@@ -1,3 +1,10 @@
+"""
+A script with the main function used to call all the other functions
+:author: Monika Szucs
+:date: Sept 26 2021
+"""
+
+
 import get_retail_item_description
 import get_number_of_purchased_items
 import get_price_per_unit
@@ -5,11 +12,7 @@ import get_tax_rate
 import calculate_subtotal
 import calculate_tax
 import calculate_total
-'''
-A script to run our functions
-:author: Monika Szucs
-:date: Sept 22 2021
-'''
+
 
 def main():
     retail_item_description = get_retail_item_description.get_retail_item_description()

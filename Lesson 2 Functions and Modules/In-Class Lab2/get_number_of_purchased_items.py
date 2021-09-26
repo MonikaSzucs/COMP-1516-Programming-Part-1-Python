@@ -1,3 +1,10 @@
+"""
+A script to run the get_number_of_purchased_items() and will return the number_of_purchased_items
+:author: Monika Szucs
+:date: Sept 26 2021
+"""
+
+
 def get_number_of_purchased_items():
     """
     Check to make sure that a proper integer unit is entered. If not then keep asking the question and let the user

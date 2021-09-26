@@ -1,3 +1,10 @@
+"""
+A script to run the get_price_per_unit() and will return the price_per_unit
+:author: Monika Szucs
+:date: Sept 26 2021
+"""
+
+
 def get_price_per_unit():
     """
     a function that will return the price of one unit that is a float and contains two decimal places

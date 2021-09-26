@@ -1,3 +1,9 @@
+"""
+A script to run the calculate_tax() function, takes who parameters subtotal and tax, and then returns amount_tax
+:author: Monika Szucs
+:date: Sept 26 2021
+"""
+
 def calculate_tax(subtotal, tax):
     """
     a function to return the amount of tax that should be added to the subtotal amount of units purchased multiplied

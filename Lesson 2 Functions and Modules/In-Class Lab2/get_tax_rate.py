@@ -1,8 +1,14 @@
+"""
+A script to run the get_tax_rate() and return the tax_rate
+:author: Monika Szucs
+:date: Sept 26 2021
+"""
+
 def get_tax_rate():
     """
     a function that will return the tax rate that is less than the value of 1 and is a float
     Fourth Variant, parameters, and return
-    :param tax_rate: the rate of the tax that is entered from the use that is less than the value of 1
+    :param tax_rate: the rate of the tax that is entered from the user that is less than the value of 1
     :return: the tax rate that is less than 1
     """
     while True:
