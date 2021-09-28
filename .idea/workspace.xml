@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d7f61e86-a0a8-4901-a4e2-876e31bffdc2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/calculate_subtotal.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/calculate_subtotal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/calculate_tax.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/calculate_tax.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/calculate_total.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/calculate_total.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/retail_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/retail_item.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 2 Functions and Modules/Take Home Lab/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/Take Home Lab/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lesson 2 Functions and Modules/Take Home Lab/utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/Take Home Lab/utilities.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +30,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.retail_item">
+  <component name="RunManager" selected="Python.main">
     <configuration name="Lab1a" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="new4" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,8 +117,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.retail_item" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.retail_item" />
         <item itemvalue="Python.lab1b" />
         <item itemvalue="Python.Lab1a" />
       </list>

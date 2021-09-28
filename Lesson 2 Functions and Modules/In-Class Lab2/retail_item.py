@@ -4,7 +4,7 @@ A script with the main function used to call all the other functions
 :date: Sept 26 2021
 """
 
-
+# import all modules to get calculations from different functions created
 import get_retail_item_description
 import get_number_of_purchased_items
 import get_price_per_unit
