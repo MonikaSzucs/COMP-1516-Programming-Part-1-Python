@@ -36,7 +36,7 @@ def calculate_sphere_volume(radius_sphere):
 
 def calculate_BMI():
     """
-    This is a function that will calculate the BMI
+    This is a function that will calculate the  calculated by float(weight) / (float(height) * float(height))
     Third Variant, parameters, and return
     :return: The Body Mass Index
     """
@@ -49,7 +49,7 @@ def calculate_BMI():
 
 def calculate_hypotenuse():
     """
-    This is a function that will calculate teh hypotenuse
+    This is a function that will calculate the hypotenuse by using the formula math.hypot(float(side_a), float(side_b))
     Fourth Variant, parameters, and return
     :return: The Hypotenuse Length
     """
