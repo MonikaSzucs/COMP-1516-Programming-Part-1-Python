@@ -14,6 +14,6 @@ def calculate_tax(subtotal, tax):
     :return: the amount of tax that must be paid, returned with the value of two decimal places and less than 1.00
     """
     amount_tax = float(subtotal) * float(tax)
-    amount_tax = "{:.2f}".format(amount_tax)
+    amount_tax = "{:.4f}".format(amount_tax)
     return amount_tax
     # return the amount of tax caluclated from float(subtotal) * float(tax)

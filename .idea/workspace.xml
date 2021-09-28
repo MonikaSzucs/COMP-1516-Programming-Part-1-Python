@@ -6,11 +6,7 @@
       <change beforePath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/calculate_subtotal.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/calculate_subtotal.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/calculate_tax.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/calculate_tax.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/calculate_total.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/calculate_total.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/get_number_of_purchased_items.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/get_number_of_purchased_items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/get_price_per_unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/get_price_per_unit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/get_retail_item_description.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/get_retail_item_description.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/get_tax_rate.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/get_tax_rate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/retail_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/In-Class Lab2/retail_item.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 2 Functions and Modules/Take Home Lab/utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 2 Functions and Modules/Take Home Lab/utilities.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +31,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.retail_item">
     <configuration name="Lab1a" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="new4" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,8 +118,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.retail_item" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.lab1b" />
         <item itemvalue="Python.Lab1a" />
       </list>

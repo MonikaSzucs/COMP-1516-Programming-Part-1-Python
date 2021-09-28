@@ -12,7 +12,7 @@ def calculate_subtotal(price, quantity_sold):
         Fifth Variant, parameters and return
         :param price: the price of the purchased item
         :param quantity_sold: the number of items sold
-        :return: the subtotal of unit sold, float(price) * float(quantity_sold) and formatting it to two decimal places
+        :return: the subtotal of unit sold, float(price) * float(quantity_sold) and formatted to two decimal places
     """
     subtotal = float(price) * float(quantity_sold)
     subtotal = "{:.2f}".format(subtotal)
