@@ -1,18 +1,22 @@
-print(" running is magic date:")
-month_value = input("input month value:",)
-day_value = input("input day value:",)
-two_digit_year_value = input("input two digit year value:",)
+def is_magic_date():
+    print(" running is magic date:")
+    month_value = int(input("input month value:", ))
 
+    if 1 <= month_value <= 12:
+        day_value = int(input("input day value:", ))
+        if 1 <= day_value <= 31:
+            two_digit_year_value = int(input("input two digit year value:", ))
+            if 10 <= two_digit_year_value <= 99:
+                two_digit = day_value*month_value
+                if two_digit == two_digit_year_value:
+                    print("the date ", day_value, "-", month_value, "-", two_digit, "is a magic date")
+                else:
+                    print("the date ", day_value, "-", month_value, "-", two_digit, "is not a magic date")
 
-if month_value <= 12 && month_value >= 1:
-    if day_value <= 31 && day_value >= 1:
-        if two_digit_year_value >= 10 && two_digit_year_value <= 99:
-            pass
+            else:
+                print("the year value must be positive and it must be two digits")
         else:
-            print("the year value must be positive and it must be two digits")
+            print("invalid day value")
     else:
-        print("the day value must be between 1 and 31 inclusive")
-        pass
-else:
-    print("invalid month value")
-    pass
+        print("invalid month value")
+
