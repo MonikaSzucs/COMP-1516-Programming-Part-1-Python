@@ -4,8 +4,8 @@ import get_play_chicago
 
 
 def main():
-    #get_loan_qualifier.loan_qualifier()
-    #get_magic_date.is_magic_date()
+    get_loan_qualifier.loan_qualifier()
+    get_magic_date.is_magic_date()
     get_play_chicago.play_chicago()
 
 
