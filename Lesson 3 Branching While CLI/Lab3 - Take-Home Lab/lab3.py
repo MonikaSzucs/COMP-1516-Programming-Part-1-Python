@@ -5,7 +5,6 @@ def is_even(integer_number):
         return False
 
 
-
 def get_pocket_color():
     pockets = int(input("Please enter a number between 0 to 36"))
     if 0 <= pockets <= 36:
@@ -35,11 +34,21 @@ def get_pocket_color():
         print("Please enter a number")
 
 
-def play_roulette():
-    pocket_number = input("Please enter in a pocket number: ", )
-    if pocket_number == 0:
-        pass
-    
+def play_roulette(integer_number, integer_number_returned, colors):
+    pocket_number = input("enter a pocket number between 0 and 36 inclusive: ")
+    bet_amount = input("enter your bet amount")
+    round_number = 0
+    while round_number <= integer_number:
+        
+        if integer_number == 0 and colors == "green":
+            print(" you neither win nor lose you have ", bet_amount, " $")
+        elif integer_number_returned and colors == "black":
+            bet_amount = bet_amount * 1.50
+        elif integer_number_returned and colors == "red":
+            bet_amount = bet_amount * 2.00
+        elif integer_number_returned is False and colors == "black":
+            bet_amount = bet_amount * 0.5
+    print(bet_amount)
 
 
 def main():
@@ -48,6 +57,7 @@ def main():
     print(integer_number_returned)
     colors = get_pocket_color()
     print(colors)
+    play_roulette(integer_number, integer_number_returned, colors)
 
 
 if __name__ == "__main__":
