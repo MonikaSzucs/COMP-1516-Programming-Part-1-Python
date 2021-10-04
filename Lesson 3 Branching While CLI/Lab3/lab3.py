@@ -1,3 +1,10 @@
+"""
+A script with the main function used to call all the other functions
+:author: Monika Szucs
+:date: October 3 2021
+"""
+
+# import all modules to get loan qualifier, magic date, and play chicago
 import get_loan_qualifier
 import get_magic_date
 import get_play_chicago

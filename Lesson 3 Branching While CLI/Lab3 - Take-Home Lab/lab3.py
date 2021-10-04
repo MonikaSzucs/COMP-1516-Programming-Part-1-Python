@@ -6,32 +6,36 @@ def is_even(integer_number):
 
 
 def get_pocket_color():
-    pockets = int(input("Please enter a number between 0 to 36"))
-    if 0 <= pockets <= 36:
-        if 0 == pockets:
-            return "green"
-        if 1 <= pockets <= 10:
-            if (pockets % 2) == 0:
-                return "black"
+    while True:
+        try:
+            pockets = int(input("Please enter a number between 0 to 36"))
+            if 0 <= pockets <= 36:
+                if 0 == pockets:
+                    return "green"
+                if 1 <= pockets <= 10:
+                    if (pockets % 2) == 0:
+                        return "black"
+                    else:
+                        return "red"
+                elif 11 <= pockets <= 18:
+                    if (pockets % 2) == 0:
+                        return "red"
+                    else:
+                        return "black"
+                elif 19 <= pockets <= 28:
+                    if (pockets % 2) == 0:
+                        return "black"
+                    else:
+                        return "red"
+                elif 29 <= pockets <= 36:
+                    if (pockets % 2) == 0:
+                        return "red"
+                    else:
+                        return "black"
             else:
-                return "red"
-        elif 11 <= pockets <= 18:
-            if (pockets % 2) == 0:
-                return "red"
-            else:
-                return "black"
-        elif 19 <= pockets <= 28:
-            if (pockets % 2) == 0:
-                return "black"
-            else:
-                return "red"
-        elif 29 <= pockets <= 36:
-            if (pockets % 2) == 0:
-                return "red"
-            else:
-                return "black"
-    else:
-        print("Please enter a number")
+                print("You have not listened to instructions. Please enter a number only between 0 and 36 inclusive: ")
+        except:
+            print("You have not entered a number between 0 and 30 inclusive. Please try again: ")
 
 
 def play_roulette(integer_number, integer_number_returned, colors):
@@ -39,7 +43,7 @@ def play_roulette(integer_number, integer_number_returned, colors):
     bet_amount = input("enter your bet amount")
     round_number = 0
     while round_number <= integer_number:
-        
+
         if integer_number == 0 and colors == "green":
             print(" you neither win nor lose you have ", bet_amount, " $")
         elif integer_number_returned and colors == "black":
@@ -52,11 +56,14 @@ def play_roulette(integer_number, integer_number_returned, colors):
 
 
 def main():
-    integer_number = int(input("Please enter a number: ", ))
+    while True:
+        try:
+            integer_number = int(input("Please enter in a integer: "))
+            break
+        except:
+            print("Please enter a number")
     integer_number_returned = is_even(integer_number)
-    print(integer_number_returned)
     colors = get_pocket_color()
-    print(colors)
     play_roulette(integer_number, integer_number_returned, colors)
 
 
