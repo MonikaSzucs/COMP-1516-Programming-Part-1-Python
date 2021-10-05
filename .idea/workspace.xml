@@ -29,7 +29,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.lab3 (1)">
+  <component name="RunManager" selected="Python.lab3">
     <configuration name="get_play_chicago" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="new4" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -137,8 +137,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.lab3 (1)" />
         <item itemvalue="Python.lab3" />
+        <item itemvalue="Python.lab3 (1)" />
         <item itemvalue="Python.get_play_chicago" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.retail_item" />
