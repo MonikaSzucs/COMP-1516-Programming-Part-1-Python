@@ -11,60 +11,74 @@ def get_pocket_color():
             pockets = int(input("Please enter a number between 0 to 36"))
             if 0 <= pockets <= 36:
                 if 0 == pockets:
-                    return "green"
+                    return pockets, "green"
                 if 1 <= pockets <= 10:
                     if (pockets % 2) == 0:
-                        return "black"
+                        return pockets, "black"
                     else:
-                        return "red"
+                        return pockets, "red"
                 elif 11 <= pockets <= 18:
                     if (pockets % 2) == 0:
-                        return "red"
+                        return pockets, "red"
                     else:
-                        return "black"
+                        return pockets, "black"
                 elif 19 <= pockets <= 28:
                     if (pockets % 2) == 0:
-                        return "black"
+                        return pockets, "black"
                     else:
-                        return "red"
+                        return pockets, "red"
                 elif 29 <= pockets <= 36:
                     if (pockets % 2) == 0:
-                        return "red"
+                        return pockets, "red"
                     else:
-                        return "black"
+                        return pockets, "black"
             else:
                 print("You have not listened to instructions. Please enter a number only between 0 and 36 inclusive: ")
         except:
-            print("You have not entered a number between 0 and 30 inclusive. Please try again: ")
+            print("You have not entered a number between 0 and 36 inclusive. Please try again: ")
 
 
-def play_roulette(integer_number, integer_number_returned, colors):
-    pocket_number = input("enter a pocket number between 0 and 36 inclusive: ")
+def play_roulette():
+    print("running play roulette")
+    integer_color = get_pocket_color()
+    integer_number = int(integer_color[0])
+    color = integer_color[1]
+
+    print(integer_number)
+    print(color)
+
     bet_amount = input("enter your bet amount")
-    round_number = 0
-    while round_number <= integer_number:
 
-        if integer_number == 0 and colors == "green":
-            print(" you neither win nor lose you have ", bet_amount, " $")
-        elif integer_number_returned and colors == "black":
-            bet_amount = bet_amount * 1.50
-        elif integer_number_returned and colors == "red":
-            bet_amount = bet_amount * 2.00
-        elif integer_number_returned is False and colors == "black":
-            bet_amount = bet_amount * 0.5
+    boolean_value = is_even(integer_number)
     print(bet_amount)
+    print(boolean_value)
+    round_number = 0
+
+    if integer_number == 0 and color == "green":
+        print(" you neither win nor lose you have %s $" % float(bet_amount))
+    elif integer_number and color == "black":
+        bet_amount = float(bet_amount * 1.50)
+    elif integer_number and color == "red":
+        bet_amount = float(bet_amount * 2.00)
+    elif integer_number is False and color == "black":
+        bet_amount = float(bet_amount * 0.5)
+
+    if int(bet_amount) > 0:
+        print(bet_amount)
+    elif int(bet_amount) == 0:
+        print("You have not won any money")
+    else:
+        print("You owe money! Pay up!")
 
 
 def main():
     while True:
-        try:
-            integer_number = int(input("Please enter in a integer: "))
+        play_roulette()
+        play_again = input("Do you want to play again? type \"yes\" to continue, anything else to stop: ")
+        if play_again == "yes":
+            continue
+        else:
             break
-        except:
-            print("Please enter a number")
-    integer_number_returned = is_even(integer_number)
-    colors = get_pocket_color()
-    play_roulette(integer_number, integer_number_returned, colors)
 
 
 if __name__ == "__main__":
