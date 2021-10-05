@@ -81,9 +81,6 @@ def play_roulette():
     integer_number = int(integer_color[0])
     color = integer_color[1]
     boolean_value = integer_color[2]
-    print(integer_number)
-    print(color)
-    print(boolean_value)
     bet_amount = input("enter your bet amount")
 
     if integer_number == 0 and color == "green":
