@@ -2,23 +2,57 @@ import login
 
 
 def main():
+    start = "first"
     first_name = input('enter your first name: ').split()
     while True:
-        if True:
-            first_name = input('Please enter only alphabetical characters for your name: ').split()
-
-            while len(first_name) > 1:
-                first_name = input('Please Enter only one word').split()
-            print(type(first_name))
+        if start == "first":
             first_name = ''.join(map(str, first_name))
             first_name = first_name.title()
             if first_name.isalpha():
-                last_name = input("enter your last name: ").title()
-                bcit_id = input(" enter your BCIT ID")
-                login.generate_login(first_name, last_name, bcit_id)
                 break
-        else:
-            print("Please enter only alphabetical characters for your name.")
+            elif len(first_name) > 1:
+                start = "incorrect spacing"
+                continue
+            else:
+                start = "incorrect"
+                continue
+        elif start == "incorrect":
+            first_name = input('Please enter only alphabetical characters for your first name: ').split()
+            while len(first_name) > 1:
+                first_name = input('Please enter only one word').split()
+                continue
+            first_name = ''.join(map(str, first_name))
+            first_name = first_name.title()
+            if first_name.isalpha():
+                break
+            else:
+                start = "correct"
+                continue
+        elif start == "incorrect spacing":
+            first_name = input('There was incorrect spacing. We only need your first name: ').split()
+            while len(first_name) > 1:
+                first_name = input('Please enter only one word').split()
+                continue
+            first_name = ''.join(map(str, first_name))
+            first_name = first_name.title()
+            if first_name.isalpha():
+                break
+            else:
+                start = "incorrect"
+
+        elif name == "correct":
+            first_name = input('enter your first name: ').split()
+            first_name = ''.join(map(str, first_name))
+            first_name = first_name.title()
+            if first_name.isalpha():
+                break
+
+        print(type(first_name))
+        print(start)
+
+    print(first_name)
+
+
 
 
 
