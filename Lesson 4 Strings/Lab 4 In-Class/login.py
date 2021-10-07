@@ -1,8 +1,7 @@
-def generate_login():
-    first_name = input("enter your first name: ")
-    last_name = input("enter your last name: ")
-    bcit_id = input(" enter your BCIT ID")
-    pass
+def generate_login(first_name, last_name, bcit_id):
+    print(first_name)
+    print(last_name)
+    print(bcit_id)
 
 
 def change_password():
