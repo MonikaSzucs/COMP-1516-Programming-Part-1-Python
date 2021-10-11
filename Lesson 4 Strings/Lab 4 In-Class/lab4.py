@@ -90,7 +90,8 @@ def main():
         print(bcit_id_grabbed)
 
     concatenated_characters = first_name_grabbed + last_name_grabbed + bcit_id_grabbed
-    print(concatenated_characters)
+    print("your login is", concatenated_characters)
+    login.change_password()
 
 
 if __name__ == "__main__":
