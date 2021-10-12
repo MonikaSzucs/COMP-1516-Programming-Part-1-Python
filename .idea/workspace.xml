@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7f61e86-a0a8-4901-a4e2-876e31bffdc2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Lesson 5 Lists/Lesson5Lab/Lesson5Lab.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson 5 Lists/Lesson5Lab/information.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson 4 Strings/Lab 4 Take-Home/data_format.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 4 Strings/Lab 4 Take-Home/data_format.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +39,29 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.data_format">
+  <component name="RunManager" selected="Python.Lesson5Lab">
+    <configuration name="Lesson5Lab" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="new4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lesson 5 Lists/Lesson5Lab" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lesson 5 Lists/Lesson5Lab/Lesson5Lab.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="data_format" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="new4" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -53,28 +76,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lesson 4 Strings/Lab 4 Take-Home/data_format.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="lab3 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="new4" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lesson 3 Branching While CLI/Lab3 - Take-Home Lab" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lesson 3 Branching While CLI/Lab3 - Take-Home Lab/lab3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Lesson5Lab" />
         <item itemvalue="Python.data_format" />
         <item itemvalue="Python.lab4" />
         <item itemvalue="Python.login" />
         <item itemvalue="Python.lab3" />
-        <item itemvalue="Python.lab3 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -169,6 +170,7 @@
       <updated>1631666411538</updated>
       <workItem from="1633584728637" duration="325000" />
       <workItem from="1634057453684" duration="7112000" />
+      <workItem from="1634066577960" duration="2408000" />
     </task>
     <servers />
   </component>
@@ -190,5 +192,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/new4$lab4.coverage" NAME="lab4 Coverage Results" MODIFIED="1634064482464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lesson 4 Strings/Lab 4 In-Class" />
     <SUITE FILE_PATH="coverage/new4$data_format.coverage" NAME="data_format Coverage Results" MODIFIED="1634065962579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lesson 4 Strings/Lab 4 Take-Home" />
+    <SUITE FILE_PATH="coverage/new4$Lesson5Lab.coverage" NAME="Lesson5Lab Coverage Results" MODIFIED="1634069041540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lesson 5 Lists/Lesson5Lab" />
   </component>
 </project>
