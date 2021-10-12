@@ -1,13 +1,24 @@
+"""
+A script with the main function used to call all the other functions
+:author: Monika Szucs
+:date: October 12, 2021
+"""
+# import login module
 import login
 
 
 def main():
+    """
+        The main function that gets the users First Name, Last Name and BCIT ID.
+        Then sends the information to login.generate_login with 3 parameters and then creates the login information
+        Main
+    """
     info = ["first_name", "last_name"]
     spelling = ["first name", "last name"]
-    print(len(info))
-    print(info[0])
     i = 0
 
+    # Grabbing the First and Last name of the user but making sure it is only alphabets with no spacing
+    # grabbing the BCIT ID then sending it to the login.
     for names in info:
         # First Name
         start = "first"
@@ -60,37 +71,32 @@ def main():
 
         if info[i] == "first_name":
             first_name = names.title()
-            print(first_name)
         elif info[i] == "last_name":
             last_name = names.title()
-            print(last_name)
 
         i += 1
 
-    print(len(first_name))
-    print(len(last_name))
-
-    if len(first_name) > 3:
+    if len(first_name) >= 3:
         first_name_grabbed = first_name[0:3]
-        print(first_name_grabbed)
     else:
-        print(first_name)
+        first_name_grabbed = first_name
 
-    if len(last_name) > 3:
+    if len(last_name) >= 3:
         last_name_grabbed = last_name[0:3]
-        print(last_name_grabbed)
     else:
-        print(last_name)
+        last_name_grabbed = last_name
 
     bcit_id = input(" enter your BCIT ID: ")
-    print(bcit_id)
     length = len(bcit_id)
     if length >= 3:
         bcit_id_grabbed = bcit_id[length - 3:]
-        print(bcit_id_grabbed)
 
-    concatenated_characters = first_name_grabbed + last_name_grabbed + bcit_id_grabbed
-    print("your login is", concatenated_characters)
+    default_password = login.generate_login(first_name_grabbed, last_name_grabbed, bcit_id_grabbed)
+
+    # show the default password
+    print(default_password)
+
+    # generate a new password now
     login.change_password()
 
 
