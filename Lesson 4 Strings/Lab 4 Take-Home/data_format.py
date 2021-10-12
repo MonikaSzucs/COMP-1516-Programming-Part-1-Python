@@ -43,8 +43,6 @@ def to_json_format(csv_format):
         Year Published, and Book Price
         :return: returns the converted_to_json in JSON format
     """
-    print(csv_format)
-
     data = csv_format
     count = 0
 
@@ -54,16 +52,13 @@ def to_json_format(csv_format):
     # create an array
     array_position = []
     comma_position = 0
-    print(number)
+
     # appends the information into an array
     while True:
-        print(data.index(','))
         if count < number:
             comma_position = data.find(",", comma_position + 1)
-            print(comma_position)
             array_position.append(comma_position)
             count = count + 1
-            print(count)
         else:
             break
 
@@ -163,7 +158,6 @@ def main():
     # sends the Book Title, Book ISBN, Book Author Last Name, Book Publisher, Year Published and Book Price to the
     # function csv_format()
     csv_format = to_csv_format(information)
-    print(csv_format)
 
     # Sends the csv_formatted information to convert it to JSON formatting
     to_json_format(csv_format)
