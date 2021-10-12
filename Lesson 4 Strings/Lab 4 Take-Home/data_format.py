@@ -7,12 +7,17 @@ def get_strip(item):
     return item
 
 
-def to_csv_format():
+def to_csv_format(book_title, book_isbn, book_author_last_name, book_publisher, year_published, book_price):
+    print(str(book_title) + ", " + str(book_isbn) + ", " + str(book_author_last_name) + ", " + str(book_publisher) +
+          ", " + str(year_published) + ", " + str(book_price))
+
+
+def to_JSON_format():
     pass
 
 
 def get_book_info():
-    book_title = input("enter book title: ")
+    book_title = input("enter book title: ").title()
     book_title = get_strip(book_title)
     print(book_title)
 
@@ -43,7 +48,7 @@ def get_book_info():
 
     year_published = input("enter year published: ")
     todays_date = date.today()
-    
+
     while True:
         if year_published.isnumeric():
             if len(str(year_published)) == 4 and int(year_published) <= int(todays_date.year):
@@ -54,7 +59,6 @@ def get_book_info():
         else:
             year_published = input("Only enter in 4 digits: ")
 
-
     while True:
         try:
             book_price = "{:.2f}".format(float(input("enter price: ")))
@@ -64,6 +68,8 @@ def get_book_info():
             print("Please try again. It must be a number")
 
     print(book_price)
+
+    to_csv_format(book_title, book_isbn, book_author_last_name, book_publisher, year_published, book_price)
 
 
 def main():
