@@ -1,4 +1,5 @@
 from datetime import date
+import json
 
 
 def get_strip(item):
@@ -8,12 +9,50 @@ def get_strip(item):
 
 
 def to_csv_format(book_title, book_isbn, book_author_last_name, book_publisher, year_published, book_price):
-    print(str(book_title) + ", " + str(book_isbn) + ", " + str(book_author_last_name) + ", " + str(book_publisher) +
-          ", " + str(year_published) + ", " + str(book_price))
+    csv_format = str(book_title) + ", " + str(book_isbn) + ", " + str(book_author_last_name) + ", " + \
+                 str(book_publisher) + ", " + str(year_published) + ", " + str(book_price)
+    print(csv_format)
+    return csv_format
 
 
-def to_JSON_format():
-    pass
+def to_JSON_format(csv_format):
+    print(csv_format)
+
+    data = csv_format
+    count = 0
+    number = data.count(",")
+    array_position = []
+    comma_position = 0
+    print(number)
+    while True:
+        print(data.index(','))
+        if count < number:
+            comma_position = data.find(",", comma_position + 1)
+            print(comma_position)
+            array_position.append(comma_position)
+            count = count + 1
+            print(count)
+        else:
+            break
+
+    object_converted = {
+        "title": data[0:array_position[0]],
+        "isbn": data[array_position[0]:array_position[1]],
+        "author_last_name": data[array_position[1]:array_position[2]],
+        "book publisher": data[array_position[2]:array_position[3]],
+        "year_published": data[array_position[3]:array_position[4]],
+        "price": data[array_position[4]:]
+    }
+
+    converted_to_json = json.dumps(object_converted)
+
+    # the result is a JSON string:
+    print(converted_to_json)
+
+    print("The JSON Formatted String:")
+
+
+
 
 
 def get_book_info():
@@ -36,7 +75,7 @@ def get_book_info():
     book_author_last_name = input("enter author last name: ")
     while True:
         if book_author_last_name.isalpha():
-            book_author_last_name = get_strip(book_author_last_name)
+            book_author_last_name = get_strip(book_author_last_name).title()
             print(book_author_last_name)
             break
         else:
@@ -68,8 +107,11 @@ def get_book_info():
             print("Please try again. It must be a number")
 
     print(book_price)
+    csv_format = to_csv_format(book_title, book_isbn, book_author_last_name, book_publisher, year_published, book_price)
 
-    to_csv_format(book_title, book_isbn, book_author_last_name, book_publisher, year_published, book_price)
+    print(csv_format)
+
+    to_JSON_format(csv_format)
 
 
 def main():
