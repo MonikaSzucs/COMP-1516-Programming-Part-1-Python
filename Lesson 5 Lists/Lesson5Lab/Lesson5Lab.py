@@ -10,6 +10,7 @@ def main():
     info.how_many_countries()
     info.get_name_of_longest_country()
     info.get_number_of_capitals_containing()
+    info.get_countries_and_capitals_that_start_with_same_letter()
 
 
 if __name__ == "__main__":

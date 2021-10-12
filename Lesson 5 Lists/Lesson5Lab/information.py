@@ -22,12 +22,31 @@ def get_name_of_longest_country():
 
 
 def get_number_of_capitals_containing():
-    number_of_capitals_containing_e = len(capitals)
-    print(number_of_capitals_containing_e)
+    number_of_capitals_containing_e = capitals
+    letter = "an"
+    number = 0
+    for word in number_of_capitals_containing_e:
+        if letter in word:
+            number += 1
+
+    print(number)
 
 
 def get_countries_and_capitals_that_start_with_same_letter():
-    pass
+    countries_and_capitals_start_with_same_letter = countries_and_capitals
+    number = 0
+    count = 0
+    new_tuple = []
+
+    for check in countries_and_capitals_start_with_same_letter:
+        if countries_and_capitals_start_with_same_letter[number][0][0] == countries_and_capitals_start_with_same_letter[number][1][0]:
+            added = str(countries_and_capitals_start_with_same_letter[number][1] +  "-" + str(countries_and_capitals_start_with_same_letter[number][0]))
+            new_tuple.append(added)
+            count += 1
+        else:
+            pass
+        number += 1
+    print(new_tuple)
 
 
 def get_capital_of():
