@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d7f61e86-a0a8-4901-a4e2-876e31bffdc2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson 5 Lists/Lesson5Lab/Lesson5Lab.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 5 Lists/Lesson5Lab/Lesson5Lab.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson 5 Lists/Lesson5Lab/information.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 5 Lists/Lesson5Lab/information.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 1/assignment1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 1/assignment1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 1/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 1/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 1/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.Lesson5Lab">
+  <component name="RunManager" selected="Python.main">
     <configuration name="Lesson5Lab" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="new4" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -76,28 +77,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lesson 4 Strings/Lab 4 Take-Home/data_format.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="lab3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="new4" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lesson 3 Branching While CLI/Lab3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lesson 3 Branching While CLI/Lab3/lab3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -150,13 +129,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="new4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\monik\AppData\Local\Microsoft\WindowsApps\python3.8.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment 1" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment 1/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.Lesson5Lab" />
         <item itemvalue="Python.data_format" />
         <item itemvalue="Python.lab4" />
         <item itemvalue="Python.login" />
-        <item itemvalue="Python.lab3" />
       </list>
     </recent_temporary>
   </component>
