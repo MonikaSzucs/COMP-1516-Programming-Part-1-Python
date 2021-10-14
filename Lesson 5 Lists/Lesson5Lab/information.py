@@ -13,23 +13,21 @@ capitals = ('Kabul', 'Tirana (Tirane)', 'Algiers', 'Andorra la Vella', 'Luanda',
 
 def how_many_countries():
     how_many_countries = len(countries_and_capitals)
-    print(how_many_countries)
+    return how_many_countries
 
 
 def get_name_of_longest_country():
     longest_country_name = max(countries, key=len)
-    print(longest_country_name)
+    return longest_country_name
 
 
-def get_number_of_capitals_containing():
+def get_number_of_capitals_containing(letter):
     number_of_capitals_containing_e = capitals
-    letter = "an"
     number = 0
     for word in number_of_capitals_containing_e:
-        if letter in word:
+        if letter in word.lower():
             number += 1
-
-    print(number)
+    return number
 
 
 def get_countries_and_capitals_that_start_with_same_letter():
@@ -40,26 +38,53 @@ def get_countries_and_capitals_that_start_with_same_letter():
 
     for check in countries_and_capitals_start_with_same_letter:
         if countries_and_capitals_start_with_same_letter[number][0][0] == countries_and_capitals_start_with_same_letter[number][1][0]:
-            added = str(countries_and_capitals_start_with_same_letter[number][1] +  "-" + str(countries_and_capitals_start_with_same_letter[number][0]))
+            added = str(countries_and_capitals_start_with_same_letter[number][1] +  " - " + str(countries_and_capitals_start_with_same_letter[number][0]))
             new_tuple.append(added)
             count += 1
         else:
             pass
         number += 1
-    print(new_tuple)
+    return new_tuple
 
 
-def get_capital_of():
-    pass
+def get_capital_of(capital):
+    number = 0
+    position = 9999
+    for items in countries_and_capitals:
+        if capital.title() == countries_and_capitals[number][0]:
+            position = number
+        number += 1
+
+    if position == 9999:
+        return None
+    else:
+        return countries_and_capitals[position][1]
+
 
 
 def get_list_of_countries_with_this_many_letters_in_name(num_letters):
-    pass
+    length = 0
+    new_tuple = []
+    for items in countries_and_capitals:
+        if len(items[0]) == num_letters:
+            length += 1
+            new_tuple.append(items[0])
+    return new_tuple
 
 
 def get_capitals_and_countries_that_begin_and_end_with_same_letter():
-    pass
+    new_tuple = []
+    for items in countries:
+        if items[0].lower() == items[-1]:
+            new_tuple.append(items)
+    for items in capitals:
+        if items[0].lower() == items[-1]:
+            new_tuple.append(items)
+    return new_tuple
 
 
 def print_countries_in_reverse_alphabetical_order():
-    pass
+    reversed = countries[::-1]
+    return reversed
+
+
