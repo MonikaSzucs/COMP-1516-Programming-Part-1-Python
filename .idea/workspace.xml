@@ -4,7 +4,7 @@
     <list default="true" id="d7f61e86-a0a8-4901-a4e2-876e31bffdc2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment 1/assignment1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 1/assignment1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment 1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 1/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 5 Lists/Lesson5Lab/information.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 5 Lists/Lesson5Lab/information.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,8 +151,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.assignment1" />
         <item itemvalue="Python.Lesson5Lab" />
+        <item itemvalue="Python.assignment1" />
         <item itemvalue="Python.data_format" />
         <item itemvalue="Python.lab4" />
       </list>
@@ -186,16 +186,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Assignment 1/assignment1.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

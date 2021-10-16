@@ -18,7 +18,7 @@ def print_json_countries_and_capitals():
             break
         increment += 1
     print("print_json_countries_and_capitals")
-    print(total)
+    return total
 
 
 def get_list_of_countries_whose_nth_letter_is(n, letter):
@@ -29,21 +29,29 @@ def get_list_of_countries_whose_nth_letter_is(n, letter):
         if letter == countries[number][position]:
             answer.append(countries[number])
         number += 1
-    print(answer)
+    print("get_list_of_countries_whose_nth_letter_is:")
+    return answer
 
 
 def get_funny_case_capital_cities(letter):
+    print("START")
     print(letter)
     print(capitals)
-    position = 0
-    number = 0
     answer = []
+    working_on = ''
     for capital in capitals:
+        position_within = 0
         print(capital)
-        print(capital[number])
-        if letter == capitals[number][position]:
-            answer.append(capitals[number])
-        number += 1
+        print(capital[position_within])
+        while position_within < len(capital):
+            print(position_within)
+            if letter == capital[position_within].lower():
+                print("IT IS MATCHING" + capital[position_within].lower())
+                working_on += capital
+                print(working_on)
+
+            position_within += 1
+    print("get_funny_case_capital_cities:")
     print(answer)
 
 
