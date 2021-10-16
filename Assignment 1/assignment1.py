@@ -49,6 +49,9 @@ def get_funny_case_capital_cities(letter):
                 print("IT IS MATCHING" + capital[position_within].lower())
                 working_on += capital
                 print(working_on)
+                working_on = capital[:position_within - 1].lower() + capital[position_within - 1:].capitalize()
+
+                print(working_on)
 
             position_within += 1
     print("get_funny_case_capital_cities:")
