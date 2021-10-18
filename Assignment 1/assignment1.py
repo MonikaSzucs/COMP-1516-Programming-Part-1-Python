@@ -58,7 +58,7 @@ def get_funny_case_capital_cities(letter):
                 print(position_within)
                 position_within_list[position][letter_position - 1].upper()
                 print(position_within_list[position][letter_position-1].upper())
-                
+
 
             position_within += 1
             letter_position += 1
