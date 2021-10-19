@@ -12,19 +12,40 @@ def weight_converter():
 
 
 def get_divisible():
+    check = 0
     while True:
         try:
-            first_number, second_number, divisor = map(int, input
-            ("enter in two numbers and a divisor (The divisor cannot be zero): ").split())
+            if check == 0:
+                first_number, second_number, divisor = map(int, input
+                ("enter in two numbers and a divisor (The divisor cannot be zero): ").split())
+            elif check == 1:
+                first_number, second_number, divisor = map(int, input
+                ("Make sure you only enter in whoel digits. "
+                 "Enter in two numbers and a divisor (The divisor cannot be zero): ").split())
+
+            if divisor == 0:
+                print("the divisor cannot be 0")
+                break
+            elif first_number <= second_number:
+                print("first number less than second")
+                for x in range(first_number, second_number + 1):
+                    if x % divisor == 0:
+                        print(x)
+                break
+            elif first_number > second_number:
+                print("first number greater than second")
+                for y in range(first_number, second_number - 1, -1):
+                    if y % divisor == 0:
+                        print(y)
+                break
         except ValueError as e:
             print(e)
-            first_number, second_number, divisor = map(int, input
-            ("enter in two numbers and a divisor with spaces inbetween: ").split())
+            pass
 
 
-    print(first_number)
-    print(second_number)
-    print(divisor)
+def get_list_stats():
+    positive_integer = input("Please enter a positive integer: ")
+
 
 
 def main():
