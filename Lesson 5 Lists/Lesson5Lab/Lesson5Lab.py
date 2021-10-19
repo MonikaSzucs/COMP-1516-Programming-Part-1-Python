@@ -1,7 +1,7 @@
 """
-A script with three tuples and the main function
+A script with the main function
 :author: Monika Szucs
-:date: October 13 2021
+:date: October 18 2021
 """
 import information as info
 
