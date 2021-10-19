@@ -1,71 +1,119 @@
 """
-A script with all the functions
+A script with all the functions and Tuples
 :author: Monika Szucs
-:date: October 13 2021
+:date: October 18 2021
 """
 
+# Touple for Countries and Capitals
 countries_and_capitals = (
-    ['Afghanistan', 'Kabul'], ['Albania', 'Tirana (Tirane)'], ['Algeria', 'Algiers'], ['Andorra', 'Andorra la Vella'],
-    ['Angola', 'Luanda'], ['Antigua and Barbuda', "Saint John's"], ['Argentina', 'Buenos Aires'],
+    ['Afghanistan', 'Kabul'], ['Albania', 'Tirana (Tirane)'], ['Algeria', 'Algiers'], [
+        'Andorra', 'Andorra la Vella'],
+    ['Angola', 'Luanda'], ['Antigua and Barbuda',
+                           "Saint John's"], ['Argentina', 'Buenos Aires'],
     ['Armenia', 'Yerevan'],
-    ['Australia', 'Canberra'], ['Austria', 'Vienna'], ['Azerbaijan', 'Baku'], ['Bahamas', 'Nassau'],
+    ['Australia', 'Canberra'], ['Austria', 'Vienna'], [
+        'Azerbaijan', 'Baku'], ['Bahamas', 'Nassau'],
     ['Bahrain', 'Manama'],
-    ['Bangladesh', 'Dhaka'], ['Barbados', 'Bridgetown'], ['Belarus', 'Minsk'], ['Belgium', 'Brussels'],
-    ['Belize', 'Belmopan'], ['Benin', 'Porto Novo'], ['Bhutan', 'Thimphu'], ['Bolivia', 'Sucre'],
-    ['Bosnia and Herzegovina', 'Sarajevo'], ['Botswana', 'Gaborone'], ['Brazil', 'Brasilia'],
-    ['Brunei', 'Bandar Seri Begawan'], ['Bulgaria', 'Sofia'], ['Burkina Faso', 'Ouagadougou'], ['Burundi', 'Gitega'],
-    ['Cambodia', 'Phnom Penh'], ['Cameroon', 'Yaounde'], ['Canada', 'Ottawa'], ['Cape Verde', 'Praia'],
-    ['Central African Republic', 'Bangui'], ['Chad', "N'Djamena"], ['Chile', 'Santiago'], ['China', 'Beijing'],
-    ['Colombia', 'Bogota'], ['Comoros', 'Moroni'], ['Congo, Democratic Republic of the', 'Kinshasa'],
+    ['Bangladesh', 'Dhaka'], ['Barbados', 'Bridgetown'], [
+        'Belarus', 'Minsk'], ['Belgium', 'Brussels'],
+    ['Belize', 'Belmopan'], ['Benin', 'Porto Novo'], [
+        'Bhutan', 'Thimphu'], ['Bolivia', 'Sucre'],
+    ['Bosnia and Herzegovina', 'Sarajevo'], [
+        'Botswana', 'Gaborone'], ['Brazil', 'Brasilia'],
+    ['Brunei', 'Bandar Seri Begawan'], ['Bulgaria', 'Sofia'], [
+        'Burkina Faso', 'Ouagadougou'], ['Burundi', 'Gitega'],
+    ['Cambodia', 'Phnom Penh'], ['Cameroon', 'Yaounde'], [
+        'Canada', 'Ottawa'], ['Cape Verde', 'Praia'],
+    ['Central African Republic', 'Bangui'], ['Chad', "N'Djamena"], [
+        'Chile', 'Santiago'], ['China', 'Beijing'],
+    ['Colombia', 'Bogota'], ['Comoros', 'Moroni'], [
+        'Congo, Democratic Republic of the', 'Kinshasa'],
     ['Congo, Republic of the', 'Brazzaville'], ['Costa Rica', 'San Jose'],
     ["Cote d'Ivoire (Ivory Coast)", 'Yamoussoukro'],
-    ['Croatia', 'Zagreb'], ['Cuba', 'Havana'], ['Cyprus', 'Nicosia'], ['Czech Republic (Czechia)', 'Prague'],
+    ['Croatia', 'Zagreb'], ['Cuba', 'Havana'], [
+        'Cyprus', 'Nicosia'], ['Czech Republic (Czechia)', 'Prague'],
     ['Denmark', 'Copenhagen'], ['Djibouti', 'Djibouti'], ['Dominica', 'Roseau'],
     ['Dominican Republic', 'Santo Domingo'],
-    ['East Timor', 'Dili'], ['Ecuador', 'Quito'], ['Egypt', 'Cairo'], ['El Salvador', 'San Salvador'],
-    ['England', 'London'], ['Equatorial Guinea', 'Malabo'], ['Eritrea', 'Asmara'], ['Estonia', 'Tallinn'],
-    ['Eswatini (Swaziland)', 'Mbabana'], ['Ethiopia', 'Addis Ababa'], ['Federated States of Micronesia', 'Palikir'],
-    ['Fiji', 'Suva'], ['Finland', 'Helsinki'], ['France', 'Paris'], ['Gabon', 'Libreville'], ['Gambia', 'Banjul'],
-    ['Georgia', 'Tbilisi'], ['Germany', 'Berlin'], ['Ghana', 'Accra'], ['Greece', 'Athens'],
+    ['East Timor', 'Dili'], ['Ecuador', 'Quito'], [
+        'Egypt', 'Cairo'], ['El Salvador', 'San Salvador'],
+    ['England', 'London'], ['Equatorial Guinea', 'Malabo'], [
+        'Eritrea', 'Asmara'], ['Estonia', 'Tallinn'],
+    ['Eswatini (Swaziland)', 'Mbabana'], ['Ethiopia', 'Addis Ababa'], [
+        'Federated States of Micronesia', 'Palikir'],
+    ['Fiji', 'Suva'], ['Finland', 'Helsinki'], ['France', 'Paris'], [
+        'Gabon', 'Libreville'], ['Gambia', 'Banjul'],
+    ['Georgia', 'Tbilisi'], ['Germany', 'Berlin'], [
+        'Ghana', 'Accra'], ['Greece', 'Athens'],
     ['Grenada', "Saint George's"],
-    ['Guatemala', 'Guatemala City'], ['Guinea', 'Conakry'], ['Guinea-Bissau', 'Bissau'], ['Guyana', 'Georgetown'],
-    ['Haiti', 'Port au Prince'], ['Honduras', 'Tegucigalpa'], ['Hungary', 'Budapest'], ['Iceland', 'Reykjavik'],
-    ['India', 'New Delhi'], ['Indonesia', 'Jakarta'], ['Iran', 'Tehran'], ['Iraq', 'Baghdad'], ['Ireland', 'Dublin'],
-    ['Israel', 'Jerusalem'], ['Italy', 'Rome'], ['Jamaica', 'Kingston'], ['Japan', 'Tokyo'], ['Jordan', 'Amman'],
-    ['Kazakhstan', 'Nur-Sultan'], ['Kenya', 'Nairobi'], ['Kiribati', 'Tarawa Atoll'], ['Kosovo', 'Pristina'],
-    ['Kuwait', 'Kuwait City'], ['Kyrgyzstan', 'Bishkek'], ['Laos', 'Vientiane'], ['Latvia', 'Riga'],
+    ['Guatemala', 'Guatemala City'], ['Guinea', 'Conakry'], [
+        'Guinea-Bissau', 'Bissau'], ['Guyana', 'Georgetown'],
+    ['Haiti', 'Port au Prince'], ['Honduras', 'Tegucigalpa'], [
+        'Hungary', 'Budapest'], ['Iceland', 'Reykjavik'],
+    ['India', 'New Delhi'], ['Indonesia', 'Jakarta'], [
+        'Iran', 'Tehran'], ['Iraq', 'Baghdad'], ['Ireland', 'Dublin'],
+    ['Israel', 'Jerusalem'], ['Italy', 'Rome'], ['Jamaica',
+                                                 'Kingston'], ['Japan', 'Tokyo'], ['Jordan', 'Amman'],
+    ['Kazakhstan', 'Nur-Sultan'], ['Kenya', 'Nairobi'], ['Kiribati',
+                                                         'Tarawa Atoll'], ['Kosovo', 'Pristina'],
+    ['Kuwait', 'Kuwait City'], ['Kyrgyzstan', 'Bishkek'], [
+        'Laos', 'Vientiane'], ['Latvia', 'Riga'],
     ['Lebanon', 'Beirut'],
-    ['Lesotho', 'Maseru'], ['Liberia', 'Monrovia'], ['Libya', 'Tripoli'], ['Liechtenstein', 'Vaduz'],
-    ['Lithuania', 'Vilnius'], ['Luxembourg', 'Luxembourg'], ['Madagascar', 'Antananarivo'], ['Malawi', 'Lilongwe'],
-    ['Malaysia', 'Kuala Lumpur'], ['Maldives', 'Male'], ['Mali', 'Bamako'], ['Malta', 'Valletta'],
-    ['Marshall Islands', 'Majuro'], ['Mauritania', 'Nouakchott'], ['Mauritius', 'Port Louis'],
+    ['Lesotho', 'Maseru'], ['Liberia', 'Monrovia'], [
+        'Libya', 'Tripoli'], ['Liechtenstein', 'Vaduz'],
+    ['Lithuania', 'Vilnius'], ['Luxembourg', 'Luxembourg'], [
+        'Madagascar', 'Antananarivo'], ['Malawi', 'Lilongwe'],
+    ['Malaysia', 'Kuala Lumpur'], ['Maldives', 'Male'], [
+        'Mali', 'Bamako'], ['Malta', 'Valletta'],
+    ['Marshall Islands', 'Majuro'], ['Mauritania',
+                                     'Nouakchott'], ['Mauritius', 'Port Louis'],
     ['Mexico', 'Mexico City'],
-    ['Moldova', 'Chisinau'], ['Monaco', 'Monaco'], ['Mongolia', 'Ulaanbaatar'], ['Montenegro', 'Podgorica'],
-    ['Morocco', 'Rabat'], ['Mozambique', 'Maputo'], ['Myanmar (Burma)', 'Nay Pyi Taw'], ['Namibia', 'Windhoek'],
-    ['Nauru', 'No official capital'], ['Nepal', 'Kathmandu'], ['Netherlands', 'Amsterdam'],
+    ['Moldova', 'Chisinau'], ['Monaco', 'Monaco'], [
+        'Mongolia', 'Ulaanbaatar'], ['Montenegro', 'Podgorica'],
+    ['Morocco', 'Rabat'], ['Mozambique', 'Maputo'], [
+        'Myanmar (Burma)', 'Nay Pyi Taw'], ['Namibia', 'Windhoek'],
+    ['Nauru', 'No official capital'], [
+        'Nepal', 'Kathmandu'], ['Netherlands', 'Amsterdam'],
     ['New Zealand', 'Wellington'],
-    ['Nicaragua', 'Managua'], ['Niger', 'Niamey'], ['Nigeria', 'Abuja'], ['North Korea', 'Pyongyang'],
-    ['North Macedonia (Macedonia)', 'Skopje'], ['Northern Ireland', 'Belfast'], ['Norway', 'Oslo'], ['Oman', 'Muscat'],
-    ['Pakistan', 'Islamabad'], ['Palau', 'Melekeok'], ['Panama', 'Panama City'], ['Papua New Guinea', 'Port Moresby'],
-    ['Paraguay', 'Asuncion'], ['Peru', 'Lima'], ['Philippines', 'Manila'], ['Poland', 'Warsaw'], ['Portugal', 'Lisbon'],
-    ['Qatar', 'Doha'], ['Romania', 'Bucharest'], ['Russia', 'Moscow'], ['Rwanda', 'Kigali'],
+    ['Nicaragua', 'Managua'], ['Niger', 'Niamey'], [
+        'Nigeria', 'Abuja'], ['North Korea', 'Pyongyang'],
+    ['North Macedonia (Macedonia)', 'Skopje'], ['Northern Ireland', 'Belfast'], [
+        'Norway', 'Oslo'], ['Oman', 'Muscat'],
+    ['Pakistan', 'Islamabad'], ['Palau', 'Melekeok'], [
+        'Panama', 'Panama City'], ['Papua New Guinea', 'Port Moresby'],
+    ['Paraguay', 'Asuncion'], ['Peru', 'Lima'], ['Philippines',
+                                                 'Manila'], ['Poland', 'Warsaw'], ['Portugal', 'Lisbon'],
+    ['Qatar', 'Doha'], ['Romania', 'Bucharest'], [
+        'Russia', 'Moscow'], ['Rwanda', 'Kigali'],
     ['Saint Kitts and Nevis', 'Basseterre'], ['Saint Lucia', 'Castries'],
     ['Saint Vincent and the Grenadines', 'Kingstown'],
-    ['Samoa', 'Apia'], ['San Marino', 'San Marino'], ['Sao Tome and Principe', 'Sao Tome'], ['Saudi Arabia', 'Riyadh'],
-    ['Scotland', 'Edinburgh'], ['Senegal', 'Dakar'], ['Serbia', 'Belgrade'], ['Seychelles', 'Victoria'],
-    ['Sierra Leone', 'Freetown'], ['Singapore', 'Singapore'], ['Slovakia', 'Bratislava'], ['Slovenia', 'Ljubljana'],
-    ['Solomon Islands', 'Honiara'], ['Somalia', 'Mogadishu'], ['South Africa', 'Pretoria, Bloemfontein, Cape Town'],
-    ['South Korea', 'Seoul'], ['South Sudan', 'Juba'], ['Spain', 'Madrid'], ['Sri Lanka', 'Colombo'],
+    ['Samoa', 'Apia'], ['San Marino', 'San Marino'], [
+        'Sao Tome and Principe', 'Sao Tome'], ['Saudi Arabia', 'Riyadh'],
+    ['Scotland', 'Edinburgh'], ['Senegal', 'Dakar'], [
+        'Serbia', 'Belgrade'], ['Seychelles', 'Victoria'],
+    ['Sierra Leone', 'Freetown'], ['Singapore', 'Singapore'], [
+        'Slovakia', 'Bratislava'], ['Slovenia', 'Ljubljana'],
+    ['Solomon Islands', 'Honiara'], ['Somalia', 'Mogadishu'], [
+        'South Africa', 'Pretoria, Bloemfontein, Cape Town'],
+    ['South Korea', 'Seoul'], ['South Sudan', 'Juba'], [
+        'Spain', 'Madrid'], ['Sri Lanka', 'Colombo'],
     ['Sudan', 'Khartoum'],
-    ['Suriname', 'Paramaribo'], ['Sweden', 'Stockholm'], ['Switzerland', 'Bern'], ['Syria', 'Damascus'],
-    ['Taiwan', 'Taipei'], ['Tajikistan', 'Dushanbe'], ['Tanzania', 'Dodoma'], ['Thailand', 'Bangkok'], ['Togo', 'Lome'],
-    ['Tonga', "Nuku'alofa"], ['Trinidad and Tobago', 'Port of Spain'], ['Tunisia', 'Tunis'], ['Turkey', 'Ankara'],
-    ['Turkmenistan', 'Ashgabat'], ['Tuvalu', 'Funafuti'], ['Uganda', 'Kampala'], ['Ukraine', 'Kiev'],
-    ['United Arab Emirates', 'Abu Dhabi'], ['United Kingdom', 'London'], ['United States', 'Washington D.C.'],
-    ['Uruguay', 'Montevideo'], ['Uzbekistan', 'Tashkent'], ['Vanuatu', 'Port Vila'], ['Vatican City', 'Vatican City'],
-    ['Venezuela', 'Caracas'], ['Vietnam', 'Hanoi'], ['Wales', 'Cardiff'], ['Yemen', "Sana'a"], ['Zambia', 'Lusaka'],
+    ['Suriname', 'Paramaribo'], ['Sweden', 'Stockholm'], [
+        'Switzerland', 'Bern'], ['Syria', 'Damascus'],
+    ['Taiwan', 'Taipei'], ['Tajikistan', 'Dushanbe'], [
+        'Tanzania', 'Dodoma'], ['Thailand', 'Bangkok'], ['Togo', 'Lome'],
+    ['Tonga', "Nuku'alofa"], ['Trinidad and Tobago', 'Port of Spain'], [
+        'Tunisia', 'Tunis'], ['Turkey', 'Ankara'],
+    ['Turkmenistan', 'Ashgabat'], ['Tuvalu', 'Funafuti'], [
+        'Uganda', 'Kampala'], ['Ukraine', 'Kiev'],
+    ['United Arab Emirates', 'Abu Dhabi'], ['United Kingdom',
+                                            'London'], ['United States', 'Washington D.C.'],
+    ['Uruguay', 'Montevideo'], ['Uzbekistan', 'Tashkent'], [
+        'Vanuatu', 'Port Vila'], ['Vatican City', 'Vatican City'],
+    ['Venezuela', 'Caracas'], ['Vietnam', 'Hanoi'], [
+        'Wales', 'Cardiff'], ['Yemen', "Sana'a"], ['Zambia', 'Lusaka'],
     ['Zimbabwe', 'Harare'])
 
+# Touple for Countries
 countries = (
     'Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 'Armenia',
     'Australia',
@@ -98,6 +146,7 @@ countries = (
     'United Arab Emirates', 'United Kingdom', 'United States', 'Uruguay', 'Uzbekistan', 'Vanuatu', 'Vatican City',
     'Venezuela', 'Vietnam', 'Wales', 'Yemen', 'Zambia', 'Zimbabwe')
 
+# Touple for Capitals
 capitals = (
     'Kabul', 'Tirana (Tirane)', 'Algiers', 'Andorra la Vella', 'Luanda', "Saint John's", 'Buenos Aires', 'Yerevan',
     'Canberra', 'Vienna', 'Baku', 'Nassau', 'Manama', 'Dhaka', 'Bridgetown', 'Minsk', 'Brussels', 'Belmopan',
@@ -128,16 +177,33 @@ capitals = (
 
 
 def how_many_countries():
+    """
+        A function that look through the countries_and_capitals touple and return how many countries there are
+        First Variant and return
+        :return: returns how many countries are in the Touple
+    """
     how_many_countries = len(countries_and_capitals)
     return how_many_countries
 
 
 def get_name_of_longest_country():
+    """
+        A function that gets the longest country name
+        Second Variant and return
+        :return: returns the lonest country name
+    """
     longest_country_name = max(countries, key=len)
     return longest_country_name
 
 
 def get_number_of_capitals_containing(letter):
+    """
+        A function that will grab the 3 parameters and then concatenate them to create the login then return the
+        default password
+        Third Variant, parameter, and return
+        :param letter: contains the letter the user wants to check that is contained in the capital
+        :return: returns the number of capitals containing the letter searched for
+    """
     number = 0
     for word in capitals:
         if letter in word.lower():
@@ -146,6 +212,12 @@ def get_number_of_capitals_containing(letter):
 
 
 def get_countries_and_capitals_that_start_with_same_letter():
+    """
+        A function that will look to see if the countries and capitals start with the same letter.
+        If so then display it.
+        Fourth Variant and return
+        :return: returns the countries and capitals that start with the same letter
+    """
     countries_and_capitals_start_with_same_letter = countries_and_capitals
     number = 0
     count = 0
@@ -165,6 +237,12 @@ def get_countries_and_capitals_that_start_with_same_letter():
 
 
 def get_capital_of(capital):
+    """
+        A function that will get the capital of a country
+        Fifth Variant, parameter, and return
+        :param capital: contains the country the user wants to check the capital of
+        :return: returns the capital of the country. If non existant then return none.
+    """
     number = 0
     position = 9999
     for items in countries_and_capitals:
@@ -179,6 +257,12 @@ def get_capital_of(capital):
 
 
 def get_list_of_countries_with_this_many_letters_in_name(num_letters):
+    """
+        A function that will display a list of countries with the number value entered
+        Sixth Variant, parameter, and return
+        :param num_letters: contains a number with corralates with which list of countries will be displayed based on the length enter in numeric value.
+        :return: returns the list of countries containing that length
+    """
     length = 0
     new_tuple = []
     for items in countries_and_capitals:
@@ -189,6 +273,12 @@ def get_list_of_countries_with_this_many_letters_in_name(num_letters):
 
 
 def get_capitals_and_countries_that_begin_and_end_with_same_letter():
+    """
+        A function that will look at if the capitals and countries begin and end with the same letter.
+        If so then display it.
+        Seventh Variant and return
+        :return: returns the capitals and countries that begin adn end with the same letter
+    """
     new_tuple = []
     for items in countries:
         if items[0].lower() == items[-1]:
@@ -200,5 +290,10 @@ def get_capitals_and_countries_that_begin_and_end_with_same_letter():
 
 
 def print_countries_in_reverse_alphabetical_order():
+    """
+        A function that will print the countries in reverse alphabetical order
+        Seventh Variant and return
+        :return: returns the countries in reverse order
+    """
     reversed = countries[::-1]
     return reversed
