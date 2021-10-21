@@ -7,61 +7,49 @@ import json
 
 def print_json_countries_and_capitals():
     increment = 0
-    total = []
+    print("[")
     while True:
+        print("\t{")
         if increment < len(countries):
-            pair = {"country_name": countries[increment],
-                    "capital_city": capitals[increment]
-                    }
-            total.append(pair)
+            print('\t\t"country_name" : ' + countries[increment])
+            print('\t\t"capital_city" : ' + capitals[increment])
         else:
             break
         increment += 1
-    print("print_json_countries_and_capitals")
-    return total
+        print("\t}")
+    print("]")
 
 
 def get_list_of_countries_whose_nth_letter_is(n, letter):
+    print("\n")
+    print("get_list_of_countries_whose_nth_letter_is:")
     position = n - 1
     number = 0
     answer = []
     for country in countries:
         if letter == countries[number][position]:
-            answer.append(countries[number])
+            answer.append(country)
         number += 1
-    print("get_list_of_countries_whose_nth_letter_is:")
     return answer
 
 
 def get_funny_case_capital_cities(letter):
-    print("START")
-    print(letter)
-    print(capitals)
-    position_within = 0
-    position = 0
-    letter_position = 0
+    print("\n")
+    case_capitals = []
+    cap = 0
+    number = 0
     position_within_list = list()
     for capital in capitals:
         print(capital)
         position_within_list.append(capital)
-        print(position_within_list)
-        print(position_within_list[position])
-        print(len(position_within_list[position]))
-        while position_within < len(position_within_list[position]):
-            print("inside while loop")
-            print(position_within)
-            print(position_within_list[position])
-            print(position_within_list[position][letter_position])
-            if letter == position_within_list[position][letter_position].lower():
-                print("inside if statement")
-                print(letter)
-                print(position_within)
-                position_within_list[position][letter_position - 1].upper()
-                print(position_within_list[position][letter_position-1].upper())
+        for character in capital:
+            print(character)
+            if character == letter:
+                letter.upper()
+                case_capitals.append(capital)
+        if cap < len(character):
+            print("END")
 
-
-            position_within += 1
-            letter_position += 1
     print(position_within_list)
 
     """

@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d7f61e86-a0a8-4901-a4e2-876e31bffdc2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson 6 Fore Loop Range/Lab6/lab6.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 6 Fore Loop Range/Lab6/lab6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 1/assignment1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 1/assignment1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 1/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.lab6">
+  <component name="RunManager" selected="Python.main">
     <configuration name="Lesson5Lab" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="new4" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,8 +150,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.lab6" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.lab6" />
         <item itemvalue="Python.Lesson5Lab" />
         <item itemvalue="Python.assignment1" />
         <item itemvalue="Python.data_format" />
