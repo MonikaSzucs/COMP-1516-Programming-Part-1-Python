@@ -35,47 +35,49 @@ def get_list_of_countries_whose_nth_letter_is(n, letter):
 
 def get_funny_case_capital_cities(letter):
     print("\n")
-    case_capitals = []
-    cap = 0
-    number = 0
-    position_within_list = list()
-    for capital in capitals:
-        print(capital)
-        position_within_list.append(capital)
-        for character in capital:
-            print(character)
-            if character == letter:
-                letter.upper()
-                case_capitals.append(capital)
-        if cap < len(character):
-            print("END")
-
-    print(position_within_list)
-
-    """
-    answer = []
-    working_on = ''
-    for capital in capitals:
-        position_within = 0
-        position_within_list = ()
-        print(capital)
-        print(capital[position_within])
-        while position_within < len(capital):
-            print(position_within)
-            if letter == capital[position_within].lower():
-                print("IT IS MATCHING " + capital[position_within].lower())
-                working_on += capital
-                print(working_on)
-                working_on = capital[:position_within - 1].lower() + capital[position_within - 1:].capitalize()
-                working_on = capital[:position_within + 1].lower() + capital[position_within + 1:].capitalize()
-                position_within += 1
-                print(working_on)
-
-            position_within += 1
-            
-    """
     print("get_funny_case_capital_cities:")
-    #print(answer)
+    case_capitals = []
+
+    for capital in capitals:
+        letter_position = []
+        print(capital)
+        for i in range(len(capital)):
+            print(i)
+            print(capital[i])
+            if capital[i].lower() == letter.lower():
+                letter_position.append(i)
+        print(letter_position)
+        single_capital = []
+        print("second for loop")
+        pos = 0
+        for j in range(len(capital)):
+            print(j)
+            print(letter_position)
+            print(capital[j])
+            if j > 0:
+                if len(capital) < (j + 1):
+                    print(capital[j].lower())
+                    single_capital.append(capital[j].lower())
+            pos += 1
+        print(single_capital)
+
+
+
+        # for character in capital:
+        """    print(character)
+            print(capital[character_count])
+            if character.lower() == letter.lower():
+                number += 1
+                letter.upper()
+                if number == 1:
+                    case_capitals.append(capital)
+            cap += 1
+            character_count += 1
+        print(cap)
+        print(len(capital))
+        if cap >= len(capital):
+            print("END")
+        print(case_capitals)"""
 
 
 
