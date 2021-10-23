@@ -1,8 +1,11 @@
 """
 Assignment 1 by Monika Szucs, A00878763
 """
+from itertools import count
+
 from data import countries_and_capitals, countries, capitals
 import json
+import re
 
 
 def print_json_countries_and_capitals():
@@ -40,6 +43,7 @@ def get_funny_case_capital_cities(letter):
     for capital in capitals:
         letter_position = []
         print(capital)
+        number_position = 0
         for i in range(len(capital)):
             print(i)
             print(capital[i])
@@ -54,7 +58,6 @@ def get_funny_case_capital_cities(letter):
             continue
         else:
             skipped = 0
-            number_position = 0
             for j in range(len(capital)):
                 if skipped == 0:
                     print("start for loop")
@@ -110,7 +113,17 @@ def get_funny_case_capital_cities(letter):
 
 
 def get_doubled_letter_countries():
-    pass
+    check_string = "google"
+    for s in check_string:
+        if s in count:
+            count[s] += 1
+        else:
+            count[s] = 1
+
+    for key in count:
+        if count[key] > 1:
+            print
+            key, count[key]
 
 
 def main():

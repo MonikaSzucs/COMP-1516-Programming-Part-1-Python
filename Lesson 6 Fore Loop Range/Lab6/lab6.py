@@ -22,7 +22,9 @@ def get_divisible():
                 first_number, second_number, divisor = map(int, input
                 ("Make sure you only enter in whoel digits. "
                  "Enter in two numbers and a divisor (The divisor cannot be zero): ").split())
-
+            if divisor > first_number and divisor > second_number:
+                print("The third number (divisor) cannot be bigger than the first or second number")
+                continue
             if divisor == 0:
                 print("the divisor cannot be 0")
                 break
@@ -34,7 +36,7 @@ def get_divisible():
                 break
             elif first_number > second_number:
                 print("first number greater than second")
-                for y in range(first_number, second_number - 1, -1):
+                for y in range(first_number - 1, second_number + 1, -1):
                     if y % divisor == 0:
                         print(y)
                 break
