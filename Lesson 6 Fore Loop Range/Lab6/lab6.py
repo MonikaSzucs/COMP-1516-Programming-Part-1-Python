@@ -1,3 +1,7 @@
+from math import sqrt
+from itertools import count, islice
+
+
 def weight_converter():
     kilogram_base = 1
     pounds_base = 2.20
@@ -99,18 +103,24 @@ def calculate_pay(number_of_employees, hourly_rate):
             print("the employee worked for " + str(int(list_of_list[i][0])) + " hours and earned " + str("{:.2f}".format(list_of_list[i][1])) + " $")
 
 
-def prime():
-    pass
+def is_prime(is_value):
+    return is_value > 1 and all(is_value % i for i in islice(count(2), int(sqrt(is_value) - 1)))
 
 
-def get_prime_numbers():
-    pass
+def get_prime_numbers(is_number):
+    is_list = []
+    i = 2
+    while i <= is_number:
+        is_list.append(i)
+        i += 1
+    return is_list
 
 
 def main():
-    # weight_converter()
-    # get_divisible()
-    # get_list_stats()
+    weight_converter()
+    get_divisible()
+    get_list_stats()
+
     try:
         number_of_employees, hourly_rate = [int(x) for x in input("Enter in the number of employees and the hourly rate: ").split()]
         print("Number of Employees is: ", number_of_employees)
@@ -119,8 +129,15 @@ def main():
     except ValueError:
         print("Make sure you only type in two numbers")
 
-    get_prime_numbers()
-
+    while True:
+        prime_value = int(input("Please enter a value that is great than 2: "))
+        if prime_value > 2:
+            numbers_returned = get_prime_numbers(prime_value)
+            break
+    print(numbers_returned)
+    for number in numbers_returned:
+        if is_prime(number):
+            print("the number " + str(number) + " is prime number")
 
 if __name__ == "__main__":
     main()
