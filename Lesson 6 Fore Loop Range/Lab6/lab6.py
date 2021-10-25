@@ -4,7 +4,7 @@ get_prime_numbers()functions
 :author: Monika Szucs
 :date: October 24, 2021
 """
-# import statments
+# import statements
 from math import sqrt
 from itertools import count, islice
 
@@ -109,6 +109,17 @@ def get_list_stats():
 
 
 def calculate_pay(number_of_employees, hourly_rate):
+    """
+        A function that will take two parameter numbers which are number of employees and hourly rate. The function
+        creates list of lists. Each inner list consists of the number worked hours and the pay of each employee. The
+        size of the list should be the same as the employee's number. The function will prompt the user to enter the
+        number of worked hours for each employee, calculates the pay of the employee, creates a list of the number of
+        hours and the pay and adds it to teh employee list.
+        Fourth Variant, parameters, return
+        :param number_of_employees: number of employees
+        :param hourly_rate: the hourly rate in integer form
+        :return: returns the string that has had the leading and ending spaces removed
+    """
     list_of_list = []
     normal_hours = 40
     increment = 0
@@ -164,10 +175,24 @@ def calculate_pay(number_of_employees, hourly_rate):
 
 
 def is_prime(is_value):
+    """
+        A function that checks to see if the number is a prime number. If so return True.
+        Fifth Variant, parameters, return
+        :param is_value: number entered by user
+        :return: returns if the number entered is a prime number if so return True.
+    """
     return is_value > 1 and all(is_value % i for i in islice(count(2), int(sqrt(is_value) - 1)))
 
 
 def get_prime_numbers(is_number):
+    """
+        A function that takes one argument which is a positive integer that is greater than 2, the function generates
+        a list of integers from 2 to the given number inclusive. The function then iterates through the list and
+        displays all the prime numbers in the list.
+        Sixth Variant, parameters, return
+        :param is_number: the argument which is an integer entered in by user
+        :return: returns the list of numbers from 2 to given number inclusive
+    """
     is_list = []
     i = 2
     while i <= is_number:
@@ -201,7 +226,6 @@ def main():
     for number in numbers_returned:
         if is_prime(number):
             print("the number " + str(number) + " is prime number")
-
 
 
 if __name__ == "__main__":
