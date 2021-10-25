@@ -76,46 +76,27 @@ def get_list_stats():
 
 def calculate_pay(number_of_employees, hourly_rate):
     list_of_list = []
-    print("inside function")
-    print(number_of_employees)
-    print(hourly_rate)
     normal_hours = 40
     for i in range(number_of_employees):
         list_of_list.append([])
-        print(i)
         # In each iteration, add an empty list to the main list
         try:
             worked_hours = input("Please enter the number of worked hours: ")
             if type(int(worked_hours)) == int:
-                print(worked_hours)
                 list_of_list[i].append(int(worked_hours))
-                print(list_of_list)
                 continue
         except (TypeError, NameError, ValueError):
             print("Please only enter in positive numbers")
-    print(worked_hours)
-    print("NORMAL HOURS:")
-    print(normal_hours)
-    print("second if and else statement")
     for i in range(number_of_employees):
-        print("VALUE CHECK")
-        print(int(worked_hours))
-        print(int(normal_hours))
-        print(list_of_list[i][0])
         if 0 <= list_of_list[i][0] <= int(normal_hours):
-            print("less than 40")
             total = int(list_of_list[i][0]) * hourly_rate
             list_of_list[i].append(total)
-            print("values:")
-            print(list_of_list)
+            print("the employee worked for " + str(int(list_of_list[i][0])) + " hours and earned " + str("{:.2f}".format(list_of_list[i][1])) + " $")
         elif list_of_list[i][0] > normal_hours:
-            print("greater than 40")
-            overtime = normal_hours - int(worked_hours)
-            print(overtime)
+            overtime = int(list_of_list[i][0]) - normal_hours
             total = int(overtime * hourly_rate * 1.5) + (normal_hours * hourly_rate)
-            print(total)
             list_of_list[i].append(total)
-            print(list_of_list)
+            print("the employee worked for " + str(int(list_of_list[i][0])) + " hours and earned " + str("{:.2f}".format(list_of_list[i][1])) + " $")
 
 
 def prime():
