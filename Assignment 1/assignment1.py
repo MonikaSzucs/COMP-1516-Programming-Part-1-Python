@@ -45,14 +45,9 @@ def get_funny_case_capital_cities(letter):
         print(capital)
         number_position = 0
         for i in range(len(capital)):
-            print(i)
-            print(capital[i])
             if capital[i].lower() == letter.lower():
                 letter_position.append(i)
-        print("Letter position here for all found")
-        print(letter_position)
         single_capital = []
-        print("second for loop")
         pos = 0
         if len(letter_position) == 0:
             continue
@@ -60,40 +55,41 @@ def get_funny_case_capital_cities(letter):
             skipped = 0
             for j in range(len(capital)):
                 if skipped == 0:
-                    print("start for loop")
-                    print(len(capital))
-                    print(j)
-                    print(letter_position)
-                    #print(letter_position[number_position])
-                    print(capital[j])
                     if j > 0:
                         print("number position of letter that is matched")
-                        print(letter_position[number_position])
-                        if j == letter_position[number_position]:
-                            print("inside if")
-                            print(letter_position[number_position])
-                            single_capital.pop()
-                            single_capital.append(capital[j-1].upper())
-                            print(capital[j].lower())
-                            single_capital.append(capital[j].lower())
-                            if j < len(capital):
-                                print("inside if statement")
-                                print(len(capital))
-                                print(j)
-                                if len(capital) - 1 == j:
-                                    print("last item in list")
+                        print(letter_position)
+                        print(number_position)
+                        if number_position < len(letter_position):
+                            print("letter position IN HERE")
+                            if j == letter_position[number_position]:
+                                print("inside if")
+                                print(letter_position[number_position])
+                                single_capital.pop()
+                                single_capital.append(capital[j-1].upper())
+                                print(capital[j].lower())
+                                single_capital.append(capital[j].lower())
+                                number_position += 1
+                                if j < len(capital):
+                                    print("inside if statement")
+                                    print(len(capital))
+                                    print(j)
+                                    if len(capital) - 1 == j:
+                                        print("last item in list")
+                                    else:
+                                        single_capital.append(capital[j+1].upper())
+                                        print(single_capital)
+                                        skipped = 1
                                 else:
-                                    single_capital.append(capital[j+1].upper())
-                                    print(single_capital)
-                                    skipped = 1
+                                    print("inside else statmeent inside second loop")
+                                    continue
+                            elif j == len(capital) - 1:
+                                print("last letter")
+                                single_capital.append(capital[j].lower())
                             else:
-                                print("inside else statmeent inside second loop")
-                                continue
-                        elif j == len(capital) - 1:
-                            print("last letter")
-                            single_capital.append(capital[j].lower())
+                                single_capital.append(capital[j].lower())
                         else:
                             single_capital.append(capital[j].lower())
+                            number_position += 1
                     elif j == 0:
                         single_capital.append(capital[j].lower())
                         print("initial position")
