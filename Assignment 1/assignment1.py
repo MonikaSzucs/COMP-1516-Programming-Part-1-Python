@@ -64,9 +64,7 @@ def get_funny_case_capital_cities(letter):
     print("get_funny_case_capital_cities:")
     case_capitals = []
     for capital in capitals:
-        print("STARTING FOR LOOP")
         letter_position = []
-        print(capital)
         number_position = 0
         for i in range(len(capital)):
             if capital[i].lower() == letter.lower():
@@ -80,44 +78,27 @@ def get_funny_case_capital_cities(letter):
             if letter_position[0] == 0:
                 single_capital.append(capital[0].lower())
                 single_capital.append(capital[0+1].upper())
-                print(single_capital)
                 skipped += 1
             for j in range(len(capital)):
-                print(skipped)
-                print("START INTERNAL FOR LOOP")
                 if skipped == 0:
                     if j > 0:
-                        print("number position of letter that is matched")
-                        print(letter_position)
-                        print(number_position)
                         if number_position < len(letter_position):
-                            print("letter position IN HERE")
                             if j == letter_position[number_position]:
-                                print("inside if")
-                                print(letter_position[number_position])
                                 single_capital.pop()
                                 single_capital.append(capital[j-1].upper())
-                                print(capital[j].lower())
                                 single_capital.append(capital[j].lower())
                                 number_position += 1
                                 if j < len(capital):
-                                    print("inside if statement")
-                                    print(len(capital))
-                                    print(j)
                                     if len(capital) - 1 == j:
-                                        print("last item in list")
+                                        continue
                                     else:
                                         single_capital.append(capital[j+1].upper())
-                                        print(single_capital)
                                         skipped = 1
                                 else:
-                                    print("inside else statmeent inside second loop")
                                     continue
                             elif j == len(capital) - 1:
-                                print("last letter")
                                 single_capital.append(capital[j].lower())
                             else:
-                                print("INSIDE THIS ELSE STATEMENT")
                                 single_capital.append(capital[j].lower())
                         else:
                             single_capital.append(capital[j].lower())
@@ -125,19 +106,14 @@ def get_funny_case_capital_cities(letter):
                     elif j == 0:
 
                         single_capital.append(capital[j].lower())
-                        print("initial position")
                     else:
                         single_capital.append(capital[j].lower())
                     pos += 1
                 else:
                     skipped = 0
                     continue
-        print(single_capital)
         single_capital = ''.join(single_capital)
-        print(single_capital)
         case_capitals.append(single_capital)
-        print("case_capitals")
-        print(case_capitals)
     return case_capitals
 
 
@@ -146,32 +122,23 @@ def get_doubled_letter_countries():
         A function that will only get the countries that have double letters and organize it by alphabet
         Fourth Variant
     """
+    print("\n")
     print("Start get_doubled_letter_countries")
     double_letter_countries = []
     position = 0
     for country in countries:
-        print(country)
         letter_position = 0
         for character in range(len(country)):
-            print("START SECOND LOOP")
-            print(character)
-            print(country)
-            print(country[character])
-            print(len(country))
             if character < len(country):
-                print("LESS")
                 try:
                     if country[character] == country[character + 1]:
-                        print("MATCHING!!!")
                         double_letter_countries.append(country.lower())
-                        print("There is an error")
                 except (TypeError, NameError, ValueError, IndexError):
-                    print("IndexError it means it is ending")
+                    continue
             letter_position += 1
         position += 1
-    print("END")
-    print(double_letter_countries)
-    print(sorted(double_letter_countries, key=lambda t: t[-3]))
+    converted_tuple = tuple(sorted(double_letter_countries, key=lambda t: t[-3]))
+    return converted_tuple
 
 
 def main():

@@ -13,7 +13,7 @@ def main():
     print(assignment1.get_funny_case_capital_cities("u"))
     print(assignment1.get_funny_case_capital_cities("z"))
     print(assignment1.get_funny_case_capital_cities("w"))
-    #print(assignment1.get_doubled_letter_countries())
+    print(assignment1.get_doubled_letter_countries())
 
 
 if __name__ == "__main__":
