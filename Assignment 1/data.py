@@ -1,5 +1,8 @@
 """
-Assignment 1 by Monika Szucs, A00878763
+Assignment 1 by Monika Szucs A00878763
+A script containing the dummy main function and all three tuples
+:author: Monika Szucs
+:date: October 25, 2021
 """
 
 

@@ -121,10 +121,12 @@ def get_doubled_letter_countries():
     """
         A function that will only get the countries that have double letters and organize it by alphabet
         Fourth Variant
+        :return: A tuple containing all the double letter countries in alphabetical order by double letters
     """
     print("\n")
     print("Start get_doubled_letter_countries")
     double_letter_countries = []
+    character_type = []
     position = 0
     for country in countries:
         letter_position = 0
@@ -133,12 +135,21 @@ def get_doubled_letter_countries():
                 try:
                     if country[character] == country[character + 1]:
                         double_letter_countries.append(country.lower())
+                        character_type.append(country[character])
                 except (TypeError, NameError, ValueError, IndexError):
                     continue
             letter_position += 1
         position += 1
-    converted_tuple = tuple(sorted(double_letter_countries, key=lambda t: t[-3]))
-    return converted_tuple
+    character_type = tuple(character_type)
+    result = zip(double_letter_countries, character_type)
+    result_set = set(result)
+    sorted_items = sorted(result_set)
+    sorted_items.sort(key=lambda x:x[1])
+    listed_ordered_items = []
+    for item in sorted_items:
+        listed_ordered_items.append(item[0])
+    finished_tuple_with_doubles = tuple(listed_ordered_items)
+    return finished_tuple_with_doubles
 
 
 def main():
