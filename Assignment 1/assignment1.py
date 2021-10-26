@@ -1,5 +1,9 @@
 """
-Assignment 1 by Monika Szucs, A00878763
+Assignment 1 by Monika Szucs A00878763
+A script containing print_json_countries_and_capitals(), get_list_of_countries_whose_nth_letter_is(n, letter),
+get_funny_case_capital_cities(letter), get_doubled_letter_countries(), and a dummy main()
+:author: Monika Szucs
+:date: October 25, 2021
 """
 from itertools import count
 
@@ -9,6 +13,10 @@ import re
 
 
 def print_json_countries_and_capitals():
+    """
+        A function that will print out the countries and capitals in a json format.
+        First Variant
+    """
     increment = 0
     print("[")
     while True:
@@ -24,6 +32,14 @@ def print_json_countries_and_capitals():
 
 
 def get_list_of_countries_whose_nth_letter_is(n, letter):
+    """
+        A function that will take two parameters. It will then check to see if that country contains that letter at
+        that position.
+        Second Variant, parameters, return
+        :param n: check nth position
+        :param letter: containing the letter
+        :return: returns the list of countries who's nth letter matches the letter of the parameter
+    """
     print("\n")
     print("get_list_of_countries_whose_nth_letter_is:")
     position = n - 1
@@ -37,6 +53,13 @@ def get_list_of_countries_whose_nth_letter_is(n, letter):
 
 
 def get_funny_case_capital_cities(letter):
+    """
+    A function that will take a parameter and checks to see if a letter is found in the capital city and if so it will
+    make the previous letter within uppercase and then next letter within uppercase.
+    Third Variant, parameter, return
+    :param letter: contains a letter
+    :return: returns all cities that contain that letter and is stored in a list
+    """
     print("\n")
     print("get_funny_case_capital_cities:")
     case_capitals = []
@@ -115,21 +138,40 @@ def get_funny_case_capital_cities(letter):
         case_capitals.append(single_capital)
         print("case_capitals")
         print(case_capitals)
-
+    return case_capitals
 
 
 def get_doubled_letter_countries():
-    check_string = "google"
-    for s in check_string:
-        if s in count:
-            count[s] += 1
-        else:
-            count[s] = 1
-
-    for key in count:
-        if count[key] > 1:
-            print
-            key, count[key]
+    """
+        A function that will only get the countries that have double letters and organize it by alphabet
+        Fourth Variant
+    """
+    print("Start get_doubled_letter_countries")
+    double_letter_countries = []
+    position = 0
+    for country in countries:
+        print(country)
+        letter_position = 0
+        for character in range(len(country)):
+            print("START SECOND LOOP")
+            print(character)
+            print(country)
+            print(country[character])
+            print(len(country))
+            if character < len(country):
+                print("LESS")
+                try:
+                    if country[character] == country[character + 1]:
+                        print("MATCHING!!!")
+                        double_letter_countries.append(country.lower())
+                        print("There is an error")
+                except (TypeError, NameError, ValueError, IndexError):
+                    print("IndexError it means it is ending")
+            letter_position += 1
+        position += 1
+    print("END")
+    print(double_letter_countries)
+    print(sorted(double_letter_countries, key=lambda t: t[-3]))
 
 
 def main():

@@ -1,5 +1,8 @@
 """
-Assignment 1 by Monika Szucs, A00878763
+Assignment 1 by Monika Szucs A00878763
+A script containing the original main() function
+:author: Monika Szucs
+:date: October 25, 2021
 """
 import assignment1
 
@@ -10,7 +13,7 @@ def main():
     print(assignment1.get_funny_case_capital_cities("u"))
     print(assignment1.get_funny_case_capital_cities("z"))
     print(assignment1.get_funny_case_capital_cities("w"))
-    # print(assignment1.get_doubled_letter_countries())
+    #print(assignment1.get_doubled_letter_countries())
 
 
 if __name__ == "__main__":
