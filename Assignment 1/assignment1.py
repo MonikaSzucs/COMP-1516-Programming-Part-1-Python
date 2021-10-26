@@ -41,6 +41,7 @@ def get_funny_case_capital_cities(letter):
     print("get_funny_case_capital_cities:")
     case_capitals = []
     for capital in capitals:
+        print("STARTING FOR LOOP")
         letter_position = []
         print(capital)
         number_position = 0
@@ -49,11 +50,18 @@ def get_funny_case_capital_cities(letter):
                 letter_position.append(i)
         single_capital = []
         pos = 0
+        skipped = 0
         if len(letter_position) == 0:
             continue
         else:
-            skipped = 0
+            if letter_position[0] == 0:
+                single_capital.append(capital[0].lower())
+                single_capital.append(capital[0+1].upper())
+                print(single_capital)
+                skipped += 1
             for j in range(len(capital)):
+                print(skipped)
+                print("START INTERNAL FOR LOOP")
                 if skipped == 0:
                     if j > 0:
                         print("number position of letter that is matched")
@@ -86,11 +94,13 @@ def get_funny_case_capital_cities(letter):
                                 print("last letter")
                                 single_capital.append(capital[j].lower())
                             else:
+                                print("INSIDE THIS ELSE STATEMENT")
                                 single_capital.append(capital[j].lower())
                         else:
                             single_capital.append(capital[j].lower())
                             number_position += 1
                     elif j == 0:
+
                         single_capital.append(capital[j].lower())
                         print("initial position")
                     else:
