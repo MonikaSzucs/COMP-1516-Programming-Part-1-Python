@@ -86,4 +86,12 @@ def get_largest_province(this_dict):
 
 
 def get_province_description(province_name, this_dict):
-    pass
+    print()
+    print("Return the string description of the province name")
+    string_description = 'None'
+    for key in this_dict.keys():
+        if province_name.lower() == key.lower() and this_dict[key]["capital"] != this_dict[key]["largest"]:
+            string_description = "%s has a population of %s whose capital is %s and largest city is %s." % (key.title(), this_dict[key]["population"], this_dict[key]["capital"].title(), this_dict[key]["largest"].title())
+        elif province_name.lower() == key.lower() and this_dict[key]["capital"] == this_dict[key]["largest"]:
+            string_description = "%s has a population of %s whose capital and largest city is %s." % (key.title(), this_dict[key]["population"], this_dict[key]["capital"].title())
+    return string_description

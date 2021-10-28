@@ -57,6 +57,9 @@ def main():
     print(utilities_dict.get_largest_city("Display None", canada))
     print(utilities_dict.get_smallest_province(canada))
     print(utilities_dict.get_largest_province(canada))
+    print(utilities_dict.get_province_description("Alberta", canada))
+    print(utilities_dict.get_province_description("ontario", canada))
+    print(utilities_dict.get_province_description("Display None", canada))
 
 
 if __name__ == "__main__":

@@ -181,7 +181,7 @@
       <workItem from="1634066577960" duration="5375000" />
       <workItem from="1635278312395" duration="1696000" />
       <workItem from="1635452028401" duration="5053000" />
-      <workItem from="1635460673055" duration="1296000" />
+      <workItem from="1635460673055" duration="2753000" />
     </task>
     <servers />
   </component>
@@ -201,6 +201,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/new1$main.coverage" NAME="main Coverage Results" MODIFIED="1635461911684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lesson 7 Sets Dictionaries/Lab7" />
+    <SUITE FILE_PATH="coverage/new1$main.coverage" NAME="main Coverage Results" MODIFIED="1635463366138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lesson 7 Sets Dictionaries/Lab7" />
   </component>
 </project>
