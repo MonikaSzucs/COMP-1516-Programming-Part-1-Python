@@ -1,3 +1,6 @@
+import locale
+
+
 def display_all(this_dict):
     print(this_dict)
     for place in this_dict:
@@ -28,31 +31,58 @@ def remove_item(province_name, this_dict):
 
 def get_total_population(this_dict):
     print()
-    print("HERE")
-    print(this_dict)
-    print("TWO")
-    searching_this_dict = this_dict.items()
-    print(searching_this_dict)
-    print("START")
+    print("Returns the total population of this_dict by summing up the population of each province: ")
+    population_number = 0
     for key in this_dict.keys():
-        print(key, '->', this_dict[key])
-        print(this_dict[key]["population"])
+        population_number += int(this_dict[key]["population"])
+    locale.setlocale(locale.LC_ALL, 'en_US')
+    return locale.format("%d", population_number, grouping=True)
 
 
 def get_another_capital_city(province_name, this_dict):
-    pass
+    print()
+    print("Returns the name of the capital city for the given province_name")
+    retrieved_capital_city_name = "None"
+    for key in this_dict.keys():
+        if key == province_name.lower():
+            retrieved_capital_city_name = this_dict[key]["capital"].title()
+    return retrieved_capital_city_name
 
 
 def get_largest_city(province_name, this_dict):
-    pass
+    print()
+    print("Returns the name of teh largest city for the given province name")
+    retrieved_population = 'None'
+    for key in this_dict.keys():
+        if key == province_name.lower():
+            retrieved_population = this_dict[key]["largest"].title()
+    return retrieved_population
 
 
 def get_smallest_province(this_dict):
-    pass
+    print()
+    print("Returns the name of the province with the smallest population")
+    retrieved_smallest_population = 999999999
+    smallest_province_name = ''
+    for key in this_dict.keys():
+        new_population = int(this_dict[key]["population"])
+        if new_population < retrieved_smallest_population:
+            retrieved_smallest_population = int(this_dict[key]["population"])
+            smallest_province_name = key
+    return smallest_province_name.title()
 
 
 def get_largest_province(this_dict):
-    pass
+    print()
+    print("Returns the name of the province with the largest population")
+    retrieved_smallest_population = 0
+    smallest_province_name = ''
+    for key in this_dict.keys():
+        new_population = int(this_dict[key]["population"])
+        if new_population > retrieved_smallest_population:
+            retrieved_smallest_population = int(this_dict[key]["population"])
+            smallest_province_name = key
+    return smallest_province_name.title()
 
 
 def get_province_description(province_name, this_dict):

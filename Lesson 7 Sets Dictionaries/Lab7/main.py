@@ -50,7 +50,13 @@ def main():
         "alberta": {"capital": "edmonton", "largest": "calgary", "population": "4442879"},
         "newfoundland and labrador": {"capital": "st. john's", "largest": "st. john's", "population": "520553"}
     }
-    utilities_dict.get_total_population(canada)
+    print(utilities_dict.get_total_population(canada))
+    print(utilities_dict.get_another_capital_city("Quebec", canada))
+    print(utilities_dict.get_another_capital_city("Display None", this_dict))
+    print(utilities_dict.get_largest_city("Quebec", canada))
+    print(utilities_dict.get_largest_city("Display None", canada))
+    print(utilities_dict.get_smallest_province(canada))
+    print(utilities_dict.get_largest_province(canada))
 
 
 if __name__ == "__main__":
