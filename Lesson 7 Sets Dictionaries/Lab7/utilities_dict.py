@@ -1,7 +1,7 @@
 def display_all(this_dict):
     print(this_dict)
     for place in this_dict:
-        print("%s is the capital city of %s" % (this_dict[place],place))
+        print("%s is the capital city of %s" % (this_dict[place], place))
 
 
 def get_capital_city(province_name, this_dict):
@@ -27,7 +27,16 @@ def remove_item(province_name, this_dict):
 
 
 def get_total_population(this_dict):
-    pass
+    print()
+    print("HERE")
+    print(this_dict)
+    print("TWO")
+    searching_this_dict = this_dict.items()
+    print(searching_this_dict)
+    print("START")
+    for key in this_dict.keys():
+        print(key, '->', this_dict[key])
+        print(this_dict[key]["population"])
 
 
 def get_another_capital_city(province_name, this_dict):
@@ -48,4 +57,3 @@ def get_largest_province(this_dict):
 
 def get_province_description(province_name, this_dict):
     pass
-

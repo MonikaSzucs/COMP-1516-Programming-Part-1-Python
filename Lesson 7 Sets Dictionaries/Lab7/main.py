@@ -39,8 +39,18 @@ def main():
     utilities_dict.remove_item("New_Province", this_dict)
 
     canada = {
-        "alberta": {"capital": "edmonton", "largest": "calgary", "population": "3645257"}
+        "ontario": {"capital": "toronto", "largest": "toronto", "population": "14826276"},
+        "quebec": {"capital": "quebec city", "largest": "montreal", "population": "8604495"},
+        "nova scotia": {"capital": "halifax", "largest": "halifax", "population": "992055"},
+        "new brunswick": {"capital": "fredericton", "largest": "moncton", "population": "789225"},
+        "manitoba": {"capital": "winnipeg", "largest": "winnipeg", "population": "1383765"},
+        "british columbia": {"capital": "victoria", "largest": "vancouver", "population": "5214805"},
+        "prince edward island": {"capital": "charlottetown", "largest": "charlottetown", "population": "164318"},
+        "saskatchewan": {"capital": "regina", "largest": "saskatoon", "population": "1179844"},
+        "alberta": {"capital": "edmonton", "largest": "calgary", "population": "4442879"},
+        "newfoundland and labrador": {"capital": "st. john's", "largest": "st. john's", "population": "520553"}
     }
+    utilities_dict.get_total_population(canada)
 
 
 if __name__ == "__main__":
