@@ -19,7 +19,7 @@ def main():
     print()
     print(utilities_sets.get_the_union_of(set1, set2))
 
-    canadian_provinces_and_capital_cities = {
+    this_dict = {
         "Ontario": "Toronto",
         "Quebec": "Quebec City",
         "Nova Scotia": "Halifax",
@@ -32,8 +32,16 @@ def main():
         "Newfoundland and Labrador": "St. John's"
     }
 
-    utilities_dict.display_all(canadian_provinces_and_capital_cities)
-    utilities_dict.get_capital_city("British Columbia", canadian_provinces_and_capital_cities)
+    utilities_dict.display_all(this_dict)
+    print(utilities_dict.get_capital_city("British Columbia", this_dict))
+
+    utilities_dict.add_element("New_Province", "New_Capital_City", this_dict)
+    utilities_dict.remove_item("New_Province", this_dict)
+
+    canada = {
+        "alberta": {"capital": "edmonton", "largest": "calgary", "population": "3645257"}
+    }
+
 
 if __name__ == "__main__":
     main()
