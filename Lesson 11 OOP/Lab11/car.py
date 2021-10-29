@@ -15,7 +15,8 @@ class Car:
 
     def get_details(self):
         # TODO
-        return "%s %s %s for sale for %s" % (self._year, self._make, self._model, self._price)
+        print(type(self._price))
+        return "%s %s %s for sale for $%.2f" % (self._year, self._make, self._model, float(self._price))
 
     def reduce_price(self, reduction):
         # TODO
