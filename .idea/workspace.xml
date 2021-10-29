@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d7f61e86-a0a8-4901-a4e2-876e31bffdc2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson 7 Sets Dictionaries/~$16_Lab07_Sets_Dictionaries.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 8 File Scope Refs Debug/Lab8/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 8 File Scope Refs Debug/Lab8/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 8 File Scope Refs Debug/Lab8/lab-week-8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 8 File Scope Refs Debug/Lab8/lab-week-8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson 8 File Scope Refs Debug/Lab8/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 8 File Scope Refs Debug/Lab8/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lesson 7 Sets Dictionaries/Lab7" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -113,9 +115,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\monik\AppData\Local\Microsoft\WindowsApps\python3.8.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lesson 8 File Scope Refs Debug/Lab8" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -198,10 +200,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/new1$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1635465220344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lesson 8 File Scope Refs Debug/Lab8" />
-    <SUITE FILE_PATH="coverage/new1$main.coverage" NAME="main Coverage Results" MODIFIED="1635463366138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lesson 7 Sets Dictionaries/Lab7" />
-    <SUITE FILE_PATH="coverage/new1$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1635464936769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lesson 8 File Scope Refs Debug/Lb8" />
   </component>
 </project>
