@@ -1,5 +1,5 @@
 """
-Assignment 1 by Monika Szucs A00878763
+Lab 7 by Monika Szucs A00878763
 A script containing the original main() function
 :author: Monika Szucs
 :date: November 1, 2021

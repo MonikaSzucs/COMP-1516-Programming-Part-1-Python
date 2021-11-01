@@ -1,5 +1,5 @@
 """
-Assignment 1 by Monika Szucs A00878763
+Lab 7 by Monika Szucs A00878763
 A script containing the get_total_items(set1), display_all_items(set1), add_item(set1, item), remove_item(set1, item),
 get_the_union_of(set1, set2)
 :author: Monika Szucs
