@@ -1,3 +1,14 @@
+"""
+Assignment 1 by Monika Szucs A00878763
+A script containing import locale, the functions display_all(this_dict), get_capital_city(province_name, this_dict),
+ add_element(province_name, capital_city, this_dict), remove_item(province_name, this_dict),
+ get_total_population(this_dict), get_another_capital_city(province_name, this_dict),
+ get_largest_city(province_name, this_dict), get_smallest_province(this_dict), get_largest_province(this_dict),
+ get_province_description(province_name, this_dict)
+:author: Monika Szucs
+:date: November 1, 2021
+"""
+
 import locale
 
 

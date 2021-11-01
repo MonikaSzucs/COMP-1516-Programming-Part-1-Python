@@ -2,9 +2,10 @@
 Assignment 1 by Monika Szucs A00878763
 A script containing the original main() function
 :author: Monika Szucs
-:date: October 25, 2021
+:date: November 1, 2021
 """
 
+# importing files
 import utilities_sets
 import utilities_dict
 
