@@ -81,7 +81,7 @@ def get_another_capital_city(province_name, this_dict):
         Sixth Variant, parameter, return
         :param province_name: contains the province name
         :param this_dict: contains a dictionary of Canadian provinces and capital cities
-        :return: the capital city for the given province_name
+        :return: the capital city for the given province_name or None if doesn't exist
     """
     print()
     print("Returns the name of the capital city for the given province_name")
@@ -148,6 +148,14 @@ def get_largest_province(this_dict):
 
 
 def get_province_description(province_name, this_dict):
+    """
+        A function that returns a string description for the given province_name.
+        Return None if the province name does not exist.
+        Tenth Variant, parameters, return
+        :param province_name: contains the province name
+        :param this_dict: contains a dictionary of Canadian provinces and capital cities
+        :return: the province name or None if doesn't exist
+    """
     print()
     print("Return the string description of the province name")
     string_description = 'None'
