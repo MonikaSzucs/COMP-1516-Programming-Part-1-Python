@@ -1,3 +1,11 @@
+"""
+Lab 9 by Monika Szucs A00878763
+A script containing the main() function
+:author: Monika Szucs
+:date: November 1, 2021
+"""
+
+
 from functions import is_valid_bc_license_place, is_valid_python_variable_name, is_valid_email_address, is_valid_human_height
 
 
