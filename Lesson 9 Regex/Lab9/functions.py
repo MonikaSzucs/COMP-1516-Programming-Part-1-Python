@@ -25,14 +25,20 @@ def is_valid_bc_license_place(license):
 
 def is_valid_python_variable_name(variable):
     """
-        A function that will return the
-        Second Variant, parameters, return
-        :param license:
-        :return: True if it matches any of the patterns or else returns False
+        A function that will return a match that is between one and 32 characters total which must be lowercase or
+        underscore but no more than one underscore in a row
+        Second Variant and parameter
+        :param variable: a variable entered in by the user
     """
-    print("TEST")
     print()
-    print(variable)
+    item2 = re.search(r"[a-z][_{1}]{1,32}", variable)
+    if item2:
+        print("YES FOUND")
+        print(variable)
+    else:
+        print("NOTFOUND")
+    print()
+
 
 
 def is_valid_email_address(email):
