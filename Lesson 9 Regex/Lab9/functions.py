@@ -30,6 +30,7 @@ def is_valid_python_variable_name(variable):
         :param license:
         :return: True if it matches any of the patterns or else returns False
     """
+    print("TEST")
     print()
     print(variable)
 
