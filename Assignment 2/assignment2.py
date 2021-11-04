@@ -21,9 +21,24 @@ def write_countries_capitals_to_file(file):
 
 def save_capitals():
     print("CHECKING save capitals")
+    file_vowel_vowel_vowel_script = open("vowel_vowel_vowel.txt", "w")
+    position = 0
+    print("checking vowels")
     for capital_found in capitals:
-        if re.search("^[aeiouAEIOU][A-Za-z0-9]*", capitals):
+        if re.search(r"[aeiouAEIOU]{3}", capital_found):
+            if position == 0:
+                file_vowel_vowel_vowel_script.write(capital_found.lower())
+                position += 1
+            else:
+                file_vowel_vowel_vowel_script.write("\n" + capital_found.lower())
+    file_vowel_vowel_vowel_script.close()
+
+    print("checking consonants")
+    file_script = open("cons_cons_cons.txt", "w")
+    for capital_found in capitals:
+        if re.search(r"[^aeiouAEIOU]\s{3}", capital_found):
             print(capital_found)
+    file_script.close()
 
 
 def main():
