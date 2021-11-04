@@ -1,10 +1,10 @@
-import data
-import assignment2
-import re
+from assignment2 import write_countries_capitals_to_file, save_capitals
+from data import countries_and_capitals, countries, capitals
 
 
 def main():
-    assignment2.write_countries_capitals_to_file(“0123456789.txt”)
+    file_name = input("Please enter a file name: ")
+    write_countries_capitals_to_file(file_name)
     save_capitals()
 
 
