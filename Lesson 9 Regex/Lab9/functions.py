@@ -31,12 +31,12 @@ def is_valid_python_variable_name(variable):
         :param variable: a variable entered in by the user
     """
     print()
-    item2 = re.search(r"[a-z][_{1}]{1,32}", variable)
-    if item2:
+    print("is_valid_python_variable_name")
+    if re.search("^(?!.*?__)\w+$", variable):
         print("YES FOUND")
         print(variable)
     else:
-        print("NOTFOUND")
+        print("NOT FOUND")
     print()
 
 
@@ -49,6 +49,7 @@ def is_valid_email_address(email):
         :return: True if it matches any of the patterns or else returns False
     """
     print()
+    print("is_valid_email_address")
     print(email)
 
 
