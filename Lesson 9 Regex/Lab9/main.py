@@ -23,9 +23,12 @@ def main():
     is_valid_python_variable_name("a_good_variable_name")
     is_valid_python_variable_name("a*()Ther24")
 
-    print(is_valid_email_address("Jason_Harrison@bcit.ca"))
+    is_valid_email_address("Jason_Harrison@bcit.ca")
+    is_valid_email_address("monika@hotmail.ca")
+    is_valid_email_address("mszucs1@my.bcit.ca")
+    is_valid_email_address("12345sdfsdf.com")
 
-    # print(is_valid_human_height("2'01\""))
+    is_valid_human_height('2’1”')
 
 
 if __name__ == "__main__":

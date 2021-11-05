@@ -32,9 +32,14 @@ def is_valid_python_variable_name(variable):
     """
     print()
     print("is_valid_python_variable_name")
-    if re.search("^(?!.*?__)\w+$", variable):
-        print("YES FOUND")
-        print(variable)
+    print(variable)
+    if re.search("^[a-z_]{1,32}$", variable):
+        if not re.search("__", variable):
+            print("passed")
+            print("YES FOUND")
+            print(variable)
+        else:
+            print("not found")
     else:
         print("NOT FOUND")
     print()
@@ -51,6 +56,10 @@ def is_valid_email_address(email):
     print()
     print("is_valid_email_address")
     print(email)
+    if re.search(r"^[A-Za-z0-9\.\+_-]+@[A-Za-z0-9\._-]+\.[a-zA-Z]*$", email):
+        print("passed")
+    else:
+        print("failed")
 
 
 def is_valid_human_height(height):
@@ -62,5 +71,9 @@ def is_valid_human_height(height):
     """
     print()
     print(height)
+    if re.search("[2-8]'([0-9]{1}|1[01])\"", height):
+        print("correct")
+    else:
+        print("incorrect")
 
 
