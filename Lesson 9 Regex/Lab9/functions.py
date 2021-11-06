@@ -45,7 +45,6 @@ def is_valid_python_variable_name(variable):
     print()
 
 
-
 def is_valid_email_address(email):
     """
         A function that will return the
@@ -54,12 +53,37 @@ def is_valid_email_address(email):
         :return: True if it matches any of the patterns or else returns False
     """
     print()
+    print("---")
     print("is_valid_email_address")
     print(email)
+
+    split_email = re.findall(r'(.+)@(.+)\.(.+)', email)
+    print(split_email)
+    first_part_email = split_email[0][0]
+    # Character length
+    if re.search(r"^[a-zA-Z_]{1,256}$", first_part_email):
+        print(first_part_email)
+        # underscore
+        if not re.match("^[_]", first_part_email):
+            print("no underscore at beginning")
+            if not re.search("[_]$", first_part_email):
+                print("no underscore at the end")
+            else:
+                print("underscore at end error")
+        else:
+            print("underscore at beginning error")
+    else:
+        print("Too long")
+    #domain_part_email = split_email[0][1]
+    #print(domain_part_email)
+    #ending_part_email = split_email[0][2]
+    #print(ending_part_email)
+    """
     if re.search(r"^[A-Za-z0-9\.\+_-]+@[A-Za-z0-9\._-]+\.[a-zA-Z]*$", email):
         print("passed")
     else:
         print("failed")
+    """
 
 
 def is_valid_human_height(height):
