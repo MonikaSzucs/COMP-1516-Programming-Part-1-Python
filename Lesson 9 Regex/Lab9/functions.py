@@ -71,7 +71,7 @@ def is_valid_human_height(height):
     """
     print()
     print(height)
-    if re.search("[2-8]'([0-9]{1}|1[01])\"", height):
+    if re.search("^[2-8][']", height):
         print("correct")
     else:
         print("incorrect")
