@@ -86,7 +86,7 @@ def is_valid_email_address(email):
     """
 
 
-def is_valid_human_height(height):
+def is_valid_human_height(feet, inches):
     """
         A function that will return the
         Fourth Variant, parameters, return
@@ -94,9 +94,13 @@ def is_valid_human_height(height):
         :return: True if it matches any of the patterns or else returns False
     """
     print()
-    print(height)
-    if re.search("^[2-8][']", height):
+    print(feet)
+    print(inches)
+
+    if re.search(".+?(?=\')", height):
         print("correct")
+        if re.search("^[2]",height) == 2:
+            print("first number is 2")
     else:
         print("incorrect")
 

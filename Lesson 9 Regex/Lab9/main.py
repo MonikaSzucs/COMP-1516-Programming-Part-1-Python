@@ -34,7 +34,8 @@ def main():
     #is_valid_email_address("mszucs1@my.bcit.ca")
     #is_valid_email_address("12345sdfsdf.com")
 
-    is_valid_human_height('2’1”')
+    feet, inches = input("Please first enter the feet then inches for the height: ").split()
+    is_valid_human_height(feet, inches)
 
 
 if __name__ == "__main__":
