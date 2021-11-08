@@ -1,11 +1,11 @@
 """
 Lab 8 by Monika Szucs A00878763
-A script containing the get_countries(substring), get_capitals(substring), get_file_data()
+A script containing the main() function
 :author: Monika Szucs
-:date: November 1, 2021
+:date: November 7, 2021
 """
 
-
+# importing the functions that are within the functions file
 from functions import get_countries, get_capitals, get_file_data
 
 

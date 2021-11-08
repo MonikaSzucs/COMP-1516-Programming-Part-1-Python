@@ -2,7 +2,7 @@
 Lab 8 by Monika Szucs A00878763
 A script containing the tuple for countries and capitals
 :author: Monika Szucs
-:date: November 1, 2021
+:date: November 7, 2021
 """
 
 

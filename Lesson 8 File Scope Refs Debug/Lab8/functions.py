@@ -2,18 +2,18 @@
 Lab 8 by Monika Szucs A00878763
 A script containing the get_countries(substring), get_capitals(substring), get_file_data()
 :author: Monika Szucs
-:date: November 1, 2021
+:date: November 7, 2021
 """
 
-
+# importing the tuples from the data file
 from data import countries, capitals
 
 
 def get_countries(substring):
     """
-        A function that will loop through the countries tuple. If a country contains a substring parameter, create a
-        brand-new file named "lab-week-8.txt" for writing and write that country name on its own line in the file.
-        Then close the file.
+        A function that will loop through the countries tuple. Grab the substring paramater in the country tuple,
+        create a brand-new file named "lab-week-8.txt" for writing and write that country name on its own line in
+        the file. Then close the file.
         First Variant and parameter
         :param substring: contains a substring parameter entered in by the user.
     """
