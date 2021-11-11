@@ -1,0 +1,38 @@
+strings = ("abcdefg",
+           "aeiou",
+           "AEIOU",
+           "a1b2c3d4",
+           "a12b34c56",
+           "jason_harrison@bcit.ca",
+           "bcit",
+           "2012-02-29",
+           "BCIT SFU UBC MIT",
+           "a@b.com",
+           "$123.45",
+           "$6778.33",
+           "1999-12-25",
+           "$111.333",
+           "5'11\"",
+           "2020-01-31",
+           "6'12",
+           "-5'9\"",
+           "grrrrrrrrrrrr",
+           "aaaaaaaaeeeeeeiiiiii",
+           "jason,harrison,bcit,45",
+           "tiger,woods,golfer,100",
+           "shaquille,o'neal,basketball,101",
+           "a______b@c.com"
+           )
+
+emails = (
+        "$$$testing@hotmail.com",
+        "hello____world@gmail.com",
+        "myemail@shaw.ca",
+        "willthiswork@IdontKNow.community",
+        "123",
+        "this is the way",
+        "mlinder_3@bcit.ca",
+        "hello@something",
+        "a@x.z",
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb.ccccccccccccccccccccccccccccccc"
+        )
