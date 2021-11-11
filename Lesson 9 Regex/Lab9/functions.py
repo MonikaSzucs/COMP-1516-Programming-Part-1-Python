@@ -11,14 +11,12 @@ import re
 
 def is_valid_bc_license_plate(license):
     """
-        A function that will return the
+        A function that will return True or False if it matches the pattern of a license plate
         First Variant, parameters, return
         :param license:
         :return: True if it matches any of the patterns or else returns False
     """
-    if re.findall(
-            "^[A-Z][A-Z][A-Z][0-9][0-9][0-9]|^[0-9][0-9][0-9][A-Z][A-Z][A-Z]|^[A-Z][A-Z][0-9] ?[0-9][0-9][A-Z]|^[A-Z][A-Z][0-9]-[0-9][0-9][A-Z]",
-            license):
+    if re.search("^[A-Z]{3}\\d{3}$|^\\d{3}[A-Z]{3}$|^[A-Z]{2}\\d ?\\d{2}[A-Z]$|^[A-Z]{2}\\d-\\d{2}[A-Z]$", license):
         return True
     else:
         return False

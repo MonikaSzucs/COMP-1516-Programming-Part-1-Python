@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7f61e86-a0a8-4901-a4e2-876e31bffdc2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Lesson 9 Regex/Lab9/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/new4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/new4.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lesson 9 Regex/Lab9/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 9 Regex/Lab9/functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson 9 Regex/Lab9/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 9 Regex/Lab9/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
