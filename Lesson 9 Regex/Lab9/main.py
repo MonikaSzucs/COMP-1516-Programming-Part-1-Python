@@ -17,18 +17,32 @@ def main():
     print(is_valid_bc_license_plate("AB1-23C"))
     print(is_valid_bc_license_plate("A1B2C3"))
 
-    is_valid_python_variable_name("first_name")
-    is_valid_python_variable_name("first__name")
-    is_valid_python_variable_name(
-        "first_namesfsdfklwenvlkjdcmslwsdjkfdsfsajfldasgmlreagkjdsljgldsvvcmdaskfvjdakljvdmaclwaekjldksjgldsjagfldjsafkljdsalkmclvmvkfdjagkdgldjalkfdlsmcldsjafsdljfldajgfa")
-    is_valid_python_variable_name("x")
-    is_valid_python_variable_name("a_good_variable_name")
-    is_valid_python_variable_name("a*()Ther24")
+    print(is_valid_python_variable_name("first_name"))
+    print(is_valid_python_variable_name("first__name"))
+    print(is_valid_python_variable_name(
+        "first_namesfsdfklwenvlkjdcmslwsdjkfdsfsajfldasgmlreagkjdsljgldsvvcmdaskfvjdakljvdmaclwaekjldksjgldsjagfldjsafkljdsalkmclvmvkfdjagkdgldjalkfdlsmcldsjafsdljfldajgfa"))
+    print(is_valid_python_variable_name("x"))
+    print(is_valid_python_variable_name("a_good_variable_name"))
+    print(is_valid_python_variable_name("a*()Ther24"))
+    print(is_valid_python_variable_name("Monika"))
 
-    is_valid_email_address(emails)
+    print(is_valid_email_address("Jason_Harrison@bcit.ca"))
+    print(is_valid_email_address("a_____b@c.com"))
+    print(is_valid_email_address("$$$testing@hotmail.com"))
+    print(is_valid_email_address("hello____world@gmail.com"))
+    print(is_valid_email_address("myemail@shaw.ca"))
+    print(is_valid_email_address("willthiswork@IdontKNow.community"))
+    print(is_valid_email_address("123"))
+    print(is_valid_email_address("this is the way"))
+    print(is_valid_email_address("mlinder_3@bcit.ca"))
+    print(is_valid_email_address("hello@something"))
+    print(is_valid_email_address("a@x.z"))
+    print(is_valid_email_address("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb.ccccccccccccccccccccccccccccccc"))
+    print(is_valid_email_address("_Monika@hotmail.com"))
+    print(is_valid_email_address("Monika_@hotmail.com"))
 
-    feet, inches = input("Please first enter the feet then inches for the height: ").split()
-    is_valid_human_height(feet, inches)
+
+    is_valid_human_height("2'01")
 
 
 if __name__ == "__main__":

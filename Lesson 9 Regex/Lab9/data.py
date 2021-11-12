@@ -34,5 +34,9 @@ emails = (
         "mlinder_3@bcit.ca",
         "hello@something",
         "a@x.z",
-        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb.ccccccccccccccccccccccccccccccc"
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb.ccccccccccccccccccccccccccccccc",
+        "_Monika@hotmail.com",
+        "Monika_@hotmail.com",
+        "Jason_Harrison@bcit.ca",
+        "a_____b@c.com"
         )

@@ -24,44 +24,47 @@ def is_valid_bc_license_plate(license):
 
 def is_valid_python_variable_name(variable):
     """
-        A function that will return a match that is between one and 32 characters total which must be lowercase or
+        A function that will return a match that is between one and 32 characters total which must be lowercase and/or a
         underscore but no more than one underscore in a row
         Second Variant and parameter
-        :param variable: a variable entered in by the user
+        :param variable: a variable entered in by the user for a variable name
     """
     print()
     print("is_valid_python_variable_name")
     print(variable)
     if re.search("^[a-z_]{1,32}$", variable):
         if not re.search("__", variable):
-            print("passed")
-            print("YES FOUND")
-            print(variable)
+            return True
         else:
-            print("not found")
+            return False
     else:
-        print("NOT FOUND")
+        return False
     print()
 
 
-def is_valid_email_address(emails):
+def is_valid_email_address(email):
     """
-        A function that will return the
+        A function that will return if the email matches the specifications with True or False if doesn't
         Third Variant, parameters, return
-        :param emails:
+        :param email: checks to see if email entered fits the rules within this function
         :return: True if it matches any of the patterns or else returns False
     """
     print()
     print("is_valid_email_address")
-    print(emails)
-    for email in emails:
-        print(email)
-        if re.search("^[a-zA-Z0-9_]{1,256}@[a-zA-Z0-9_]{1,32}\.[a-zA-Z]{2,5}$", email):
-            if re.search("__", email) is None:
-                print(email)
+    print(email)
+    if re.search("^[a-zA-Z_]{1,256}@[a-zA-Z_]{1,32}\.[a-zA-Z]{2,5}$", email):
+        email_data = re.split("@", email)
+        username = email_data[0]
+        if not (username[0] == "_" or username[-1] == "_"):
+            print(email)
+            return True
+        else:
+            return False
+    else:
+        return False
 
 
-def is_valid_human_height(feet, inches):
+def is_valid_human_height(height):
     """
         A function that will return the
         Fourth Variant, parameters, return
@@ -69,12 +72,11 @@ def is_valid_human_height(feet, inches):
         :return: True if it matches any of the patterns or else returns False
     """
     print()
-    print(feet)
-    print(inches)
+    print(height)
+    height_array = re.split("'", height)
+    print(height_array[0])
+    print(type(height_array[0]))
+    print(height_array[0])
+    print(height_array[1])
+    
 
-    if re.search(".+?(?=\')", height):
-        print("correct")
-        if re.search("^[2]", height) == 2:
-            print("first number is 2")
-    else:
-        print("incorrect")
