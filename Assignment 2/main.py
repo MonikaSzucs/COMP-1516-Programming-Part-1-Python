@@ -1,4 +1,5 @@
 from assignment2 import write_countries_capitals_to_file, save_capitals
+import re
 from data import countries_and_capitals, countries, capitals
 
 
