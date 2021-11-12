@@ -2,12 +2,11 @@
 Lab 9 by Monika Szucs A00878763
 A script containing the main() function
 :author: Monika Szucs
-:date: November 1, 2021
+:date: November 11, 2021
 """
 
 from functions import is_valid_bc_license_plate, is_valid_python_variable_name, is_valid_email_address, \
     is_valid_human_height
-from data import emails
 
 
 def main():
@@ -41,8 +40,27 @@ def main():
     print(is_valid_email_address("_Monika@hotmail.com"))
     print(is_valid_email_address("Monika_@hotmail.com"))
 
-
-    is_valid_human_height("2'01")
+    print(is_valid_human_height("2'01\""))
+    print(is_valid_human_height("2'0\""))
+    print(is_valid_human_height("2'00\""))
+    print(is_valid_human_height("1'01\""))
+    print(is_valid_human_height("2'd1\""))
+    print(is_valid_human_height("d'01\""))
+    print(is_valid_human_height("2'd1in"))
+    print(is_valid_human_height("d'01in"))
+    print(is_valid_human_height("2'1\""))
+    print(is_valid_human_height("5'09\""))
+    print(is_valid_human_height("6'2in"))
+    print(is_valid_human_height("4'10in"))
+    print(is_valid_human_height("2'0in"))
+    print(is_valid_human_height("2'00in"))
+    print(is_valid_human_height("6'2\""))
+    print(is_valid_human_height("8'01\""))
+    print(is_valid_human_height("8'11\""))
+    print(is_valid_human_height("8'12\""))
+    print(is_valid_human_height("8'11in"))
+    print(is_valid_human_height("8'12in"))
+    print(is_valid_human_height("9'01\""))
 
 
 if __name__ == "__main__":

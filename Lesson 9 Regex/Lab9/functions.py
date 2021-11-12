@@ -3,20 +3,20 @@ Lab 9 by Monika Szucs A00878763
 A script containing the is_valid_bc_license_place(license), is_valid_python_variable_name(variable),
 is_valid_email_address(email), is_valid_human_height(height)
 :author: Monika Szucs
-:date: November 1, 2021
+:date: November 11, 2021
 """
 
 import re
 
 
-def is_valid_bc_license_plate(license):
+def is_valid_bc_license_plate(car_license):
     """
         A function that will return True or False if it matches the pattern of a license plate
         First Variant, parameters, return
-        :param license:
+        :param car_license: contains the car license plate
         :return: True if it matches any of the patterns or else returns False
     """
-    if re.search("^[A-Z]{3}\\d{3}$|^\\d{3}[A-Z]{3}$|^[A-Z]{2}\\d ?\\d{2}[A-Z]$|^[A-Z]{2}\\d-\\d{2}[A-Z]$", license):
+    if re.search("^[A-Z]{3}\\d{3}$|^\\d{3}[A-Z]{3}$|^[A-Z]{2}\\d ?\\d{2}[A-Z]$|^[A-Z]{2}\\d-\\d{2}[A-Z]$", car_license):
         return True
     else:
         return False
@@ -28,6 +28,7 @@ def is_valid_python_variable_name(variable):
         underscore but no more than one underscore in a row
         Second Variant and parameter
         :param variable: a variable entered in by the user for a variable name
+        :return: True if it matches any of the patterns or else returns False
     """
     print()
     print("is_valid_python_variable_name")
@@ -66,17 +67,44 @@ def is_valid_email_address(email):
 
 def is_valid_human_height(height):
     """
-        A function that will return the
+        A function that will return the correct height with the feet between 2 to 8, the inches between 0 to 11
+        and cannot include 2 feet and 0 inches or anything above 8 feet and 11 inches
         Fourth Variant, parameters, return
-        :param license:
+        :param height: contains the height in feet and inches
         :return: True if it matches any of the patterns or else returns False
     """
     print()
-    print(height)
-    height_array = re.split("'", height)
-    print(height_array[0])
-    print(type(height_array[0]))
-    print(height_array[0])
-    print(height_array[1])
-    
-
+    try:
+        print(height)
+        height_array = re.split("'", height)
+        feet = height_array[0]
+        inches = height_array[1]
+        if re.search("[2-8]", feet):
+            if (inches[-1] == '\"') or (re.search("[in]$", inches)):
+                if inches[-1] == '\"':
+                    inches_quote_removed = inches[:-1]
+                    print(int(inches_quote_removed))
+                    if re.search("^[0-9]$|^0[0-9]$|^1[01]$", inches_quote_removed):
+                        if re.search("^[2]\'[0]\"$|^[2]\'[0]{2}\"$", height):
+                            return False
+                        else:
+                            return True
+                    else:
+                        return False
+                elif re.search("[in]$", inches):
+                    inches_quote_removed = inches[:-2]
+                    if re.search("^[0-9]$|^0[0-9]$|^1[01]$", inches_quote_removed):
+                        if re.search("^[2]\'[0]in$|^[2]\'[0]{2}in$", height):
+                            return False
+                        else:
+                            return True
+                    else:
+                        return False
+                else:
+                    return False
+            else:
+                return False
+        else:
+            return False
+    except (TypeError, ValueError):
+        return False
