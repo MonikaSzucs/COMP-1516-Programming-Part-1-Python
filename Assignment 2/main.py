@@ -9,6 +9,10 @@ def main():
     save_capitals("vowel_vowel_vowel.txt")
     save_capitals("cons_cons_cons.txt")
     save_capitals("i_before_e.txt")
+    save_capitals("a_a.txt")
+    save_capitals("end_with_vowel.txt")
+    save_capitals("weird.txt")
+    save_capitals("not_start.txt")
 
 
 if __name__ == '__main__':
