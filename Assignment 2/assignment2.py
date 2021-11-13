@@ -1,8 +1,22 @@
+"""
+Assignment 2 by Monika Szucs A00878763
+A script containing the write_countries_capitals_to_file(), save_capitals(file), and not working main() Function
+:author: Monika Szucs
+:date: November 13, 2021
+"""
+
+# importing tuple, functions and regex
 from data import countries_and_capitals, countries, capitals, countries_capitals_dictionary
 import re
 
 
 def write_countries_capitals_to_file(file):
+    """
+        A function that will take in a file parameter and then check to make sure it fits the desired requirements which
+        is must contains only letters or digits and must be between 1-8 characters in length plus .txt extension
+        First Variant and parameter
+        :param file: contains the file name entered in by the user
+    """
     print(type(file))
     while True:
         if re.search(r"^[a-zA-Z0-9]{1,8}.txt$", file):
@@ -21,6 +35,18 @@ def write_countries_capitals_to_file(file):
 
 
 def save_capitals(file):
+    """
+        A function that will first check:
+        1. To see if the Capital contains three consecutive vowels with the file name vowel_vowel_vowel.txt
+        2. To see if the Capital contains three consecutive consonants file named cons_cons_cons.txt
+        3. To see if the Capital contains i somewhere before e and file named i_before_e.txt
+        4. To see if the Capital starts with a and ends with a and file named a_a.txt
+        5. To see if the Capital ends with a vowel and file named end_with_vowel.txt
+        6. To see if the Capital contains apostrophe, space or x and file named weird.txt
+        7. To see if the Capital does not start with a-e, l-p, or s and file named not_start.txt
+        Second Variant and parameter
+        :param file: has a file parameter which then gets checked to see what should be saved in a .txt file
+    """
     print("CHECKING save capitals")
     print(file)
     file_created = open(file, "w")
@@ -71,8 +97,13 @@ def save_capitals(file):
                 position += 1
             else:
                 file_created.write("\n" + capital_found.lower())
-        elif (re.search("^[^a-ei-ps]", capital_found)) and file == "not_start.txt":
+        elif (re.search("^[^a-eA-El-pL-PsS]", capital_found)) and file == "not_start.txt":
             print(capital_found)
+            if position == 0:
+                file_created.write(capital_found.lower())
+                position += 1
+            else:
+                file_created.write("\n" + capital_found.lower())
     file_created.close()
     print()
 

@@ -1,3 +1,11 @@
+"""
+Assignment 2 by Monika Szucs A00878763
+A script containing the main() working function
+:author: Monika Szucs
+:date: November 13, 2021
+"""
+
+# importing tuple, functions and regex
 from assignment2 import write_countries_capitals_to_file, save_capitals
 import re
 from data import countries_and_capitals, countries, capitals
