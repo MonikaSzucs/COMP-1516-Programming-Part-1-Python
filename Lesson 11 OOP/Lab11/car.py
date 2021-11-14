@@ -20,5 +20,6 @@ class Car:
 
     def reduce_price(self, reduction):
         # TODO
-        pass
+        reduced_price = self.calc_profit() - reduction
+        return reduced_price
 
