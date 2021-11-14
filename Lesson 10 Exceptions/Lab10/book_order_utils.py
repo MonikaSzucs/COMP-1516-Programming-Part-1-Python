@@ -95,12 +95,20 @@ def calculate_per_book_cost(cost, quantity):
 
 
 def write_book_order_details(filename, title, author, isbn, year, quantity, cost, unit_cost):
-    print(filename)
-    print(title)
-    print(author)
-    print(isbn)
-    print(year)
-    print(quantity)
-    print(cost)
-    print(unit_cost)
+    while True:
+        try:
+            f = open(filename, "x")
+            print(filename)
+            f.write("Now the file has more content!")
+            f.close()
+            print(title)
+            print(author)
+            print(isbn)
+            print(year)
+            print(quantity)
+            print(cost)
+            print(unit_cost)
+            break
+        except FileExistsError:
+            filename = input("Please enter another file name because it has already been used: ")
 
