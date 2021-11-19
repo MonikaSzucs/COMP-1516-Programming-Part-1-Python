@@ -1,0 +1,69 @@
+"""
+Lab 10 by Monika Szucs A00878763
+A script containing the main() function
+:author: Monika Szucs
+:date: November 15, 2021
+"""
+
+import re
+
+
+def validate_book_order_details(order_num, title, author, isbn, year, quantity, cost):
+    try:
+        print("--Order Number-")
+        order_num_converted = int(order_num)
+        if type(order_num_converted) == int:
+            order_num_array = [order_num]
+            removed_leading_zeros = [ele.lstrip('0') for ele in order_num_array]
+            leading_zeros_amount = 0
+            while True:
+                if len(removed_leading_zeros[0]) == leading_zeros_amount:
+                    break
+                else:
+                    leading_zeros_amount += 1
+            print(leading_zeros_amount)
+            print("--Title--")
+            if re.search("^[a-zA-Z\s]+$", title):
+                print(title)
+                print("--author--")
+                if re.search("^[a-zA-Z\s\'\"]+$", author):
+                    print(author)
+                else:
+                    raise ValueError("Author is invalid")
+            else:
+                raise ValueError("There is no lower, uppercase letter(s) or spaces")
+        else:
+            raise ValueError('invalid order number')
+    except ValueError as e:
+        print("The error is " + str(e))
+
+
+def calculate_per_book_cost(cost, quantity):
+    print(cost)
+    print(quantity)
+    try:
+        cost_per_book = cost/quantity
+        print(cost_per_book)
+        return cost_per_book
+    except ZeroDivisionError:
+        return "The quantity cannot be zero"
+    print()
+
+
+def write_book_order_details(filename, title, author, isbn, year, quantity, cost, unit_cost):
+    while True:
+        try:
+            f = open(filename, "x")
+            print(filename)
+            f.write("Now the file has more content!")
+            f.close()
+            print(title)
+            print(author)
+            print(isbn)
+            print(year)
+            print(quantity)
+            print(cost)
+            print(unit_cost)
+            break
+        except FileExistsError:
+            filename = input("Please enter another file name because it has already been used: ")
