@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7f61e86-a0a8-4901-a4e2-876e31bffdc2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Lesson 10 Exceptions/Lab10/book_order_utils2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson 10 Exceptions/Lab10/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson 10 Exceptions/Lab10/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="d7f61e86-a0a8-4901-a4e2-876e31bffdc2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
