@@ -6,6 +6,7 @@ A script containing the main() function
 """
 
 import re
+import os
 
 
 def validate_book_order_details(order_num, title, author, isbn, year, quantity, cost):
@@ -73,6 +74,11 @@ def calculate_per_book_cost(cost, quantity):
 
 
 def write_book_order_details(filename, title, author, isbn, year, quantity, cost, unit_cost):
+    path = 'C:/Users/monik/Desktop/new4/Lesson 10 Exceptions/Lab10/' + filename
+    isExist = os.path.exists(path)
+    print(isExist)
+    if isExist == True:
+        raise ValueError("Order file name  already exists!")
     file_script = open(filename, "w")
     while True:
         try:

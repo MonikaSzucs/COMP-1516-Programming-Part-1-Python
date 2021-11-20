@@ -1,0 +1,8 @@
+BOOK ORDER
+title=the title
+author=monika
+isbn=1235456
+year=2012
+quantity=12
+cost=$2
+unit_cost=$2
