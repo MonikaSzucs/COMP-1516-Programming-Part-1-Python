@@ -41,6 +41,7 @@ def validate_book_order_details(order_num, title, author, isbn, year, quantity, 
                                 print("--Cost--")
                                 if re.search("^\d+\.\d{2}$", cost):
                                     print(cost)
+                                    return True
                                 else:
                                     raise ValueError("cost must be a floating point value with exactly 2 decimal places")
                             else:
@@ -80,26 +81,35 @@ def write_book_order_details(filename, title, author, isbn, year, quantity, cost
     if isExist == True:
         raise ValueError("Order file name  already exists!")
     file_script = open(filename, "w")
+    print("--Validating--")
+    validating = validate_book_order_details("1", title, author, isbn, year, quantity, cost)
+    print(validating)
     while True:
-        try:
-            if re.search(r"^[a-zA-Z0-9]{1,8}.txt$", filename):
-                file_script.write('BOOK ORDER\n' +
-                                  'title=' + title + '\n' +
-                                  'author=' + author + '\n' +
-                                  'isbn=' + isbn + '\n' +
-                                  'year=' + year + '\n' +
-                                  'quantity=' + quantity + '\n' +
-                                  'cost=$' + cost + '\n' +
-                                  'unit_cost=$' + unit_cost
-                                  )
-                file_script.close()
+        if validating:
+            try:
+                if re.search(r"^[a-zA-Z0-9]{1,}.txt$", filename):
+                    file_script.write('BOOK ORDER\n' +
+                                      'title=' + title + '\n' +
+                                      'author=' + author + '\n' +
+                                      'isbn=' + isbn + '\n' +
+                                      'year=' + year + '\n' +
+                                      'quantity=' + quantity + '\n' +
+                                      'cost=$' + cost + '\n' +
+                                      'unit_cost=$' + unit_cost
+                                      )
+                    file_script.close()
+                    break
+                else:
+                    raise ValueError("the file name must only contains letters and/or numbers.")
+            except FileExistsError:
+                filename = input("Please enter another file name because it has already been used: ")
+            except ValueError as e:
+                print("The ValueError is " + str(e))
                 break
-            else:
-                raise ValueError("this is a value error.")
-        except FileExistsError:
-            filename = input("Please enter another file name because it has already been used: ")
-        except ValueError as e:
-            print("The ValueError is " + str(e))
-        except TypeError as e:
-            print("The TypeError is " + str(e))
+            except TypeError as e:
+                print("The TypeError is " + str(e))
+                break
+        else:
+            print("You have values that are not correctly entered. Try running the code again")
+            break
 

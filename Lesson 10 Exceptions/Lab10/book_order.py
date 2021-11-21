@@ -5,8 +5,14 @@ A script containing the main() function
 :date: November 15, 2021
 """
 
-import re
+import sys
 
-from book_order_utils import validate_book_order_details, calculate_per_book_cost, write_book_order_details
 
+def main():
+    print("main")
+    print("number of arguments", len(sys,argv), 'arguments.')
+
+
+if __name__ == "__main__":
+    main()
 
