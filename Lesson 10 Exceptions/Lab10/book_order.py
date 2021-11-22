@@ -9,28 +9,34 @@ import sys
 import os
 from aifc import Error
 from book_order_utils import validate_book_order_details, calculate_per_book_cost, write_book_order_details
+from inspect import signature
 
 
-def check_data(param):
+#def check_data(param):
     # isinstance()
     # if not type(param) is str:
     #    raise TypeError("Parameter must be a string")
-    if not isinstance(param, str):
-        raise TypeError("Parameter must be a string")
+#    if not isinstance(param, str):
+#        raise TypeError("Parameter must be a string")
 
 
-def raise_error():
-    value = int(input("Please enter a number: "))
-
-    if value < 0:
-        raise ValueError("Cannot have a negative number")
+#def raise_error():
+#    value = int(input("Please enter a number: "))
+#
+#    if value < 0:
+#        raise ValueError("Cannot have a negative number")
 
 
 def main():
-    # print(sys.argv)
-    # print(sys.argv[0])
-    # print(sys.argv[1])
-    # print(sys.argv[2])
+    print(sys.argv)
+    print(sys.argv[0])
+    sig = signature(validate_book_order_details)
+    print(type(sig))
+    print(len(sig))
+    print(str(sig))
+    print(type(str(sig)))
+    print(repr(sig))
+    print(len(repr(sig)))
     # print(len(sys.argv))
     # num = 0
     # while num < len(sys.argv):
@@ -48,6 +54,7 @@ def main():
     # full_path = os.path.join(path, filename)
     # print(full_path)
 
+    """
     try:
         # check_data(145)
         check_data("Hello")
@@ -66,7 +73,9 @@ def main():
             break
         except ValueError as v:
             print(v)
+    """
 
 
 if __name__ == '__main__':
     main()
+
