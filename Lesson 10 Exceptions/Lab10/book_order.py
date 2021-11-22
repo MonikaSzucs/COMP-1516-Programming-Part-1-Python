@@ -6,30 +6,31 @@ A script containing the main() function
 """
 
 import sys
-import argparse
+import os
 
-if __name__ == "__main__":
-    # initialize the parser
-    parser = argparse.ArgumentParser(
-        description="my mathscript"
-    )
 
-    # add the parameters positional/optional
-    parser.add_argument('-n', '--num1', help="Number 1", type=float)
-    parser.add_argument('-i', '--num2', help="Number 2", type=float)
-    parser.add_argument('-o', '--operation', help="provide operator", default="+")
+def main():
+    print(sys.argv)
+    print(sys.argv[0])
+    print(sys.argv[1])
+    print(sys.argv[2])
+    print(len(sys.argv))
+    num = 0
+    while num < len(sys.argv):
+        print(sys.argv[num])
+        num += 1
 
-    # Parse the arguments
-    args = parser.parse_args()
-    print(args)
-    result =  None
-    if args.operation == '+':
-        result = args.num1 + args.num2
-    if args.operation == '-':
-        result = args.num1 - args.num2
-    if args.operation == '*':
-        result = args.num1 * args.num2
-    if args.operation == 'pow':
-        result = pow(args.num1, args.num2)
+    #print(os.getenv())
+    print(os.getcwd())
+    path = os.getcwd()
+    print(os.path.isfile(path))
+    print(os.path.exists(path))
+    filename = "test.txt"
+    print(os.path.isfile(filename))
+    print(os.path.exists(filename))
+    full_path = os.path.join(path, filename)
+    print(full_path)
 
-    print("Result:",  result)
+
+if __name__ == '__main__':
+    main()
