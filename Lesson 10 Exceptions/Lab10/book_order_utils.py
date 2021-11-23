@@ -1,8 +1,9 @@
 """
 Lab 10 by Monika Szucs A00878763
-A script containing the main() function
+A script containing the validate_book_order_details, calculate_per_book_cost, and write_book_order_details
+function in book_order_utils.py
 :author: Monika Szucs
-:date: November 15, 2021
+:date: November 22, 2021
 """
 
 import re
@@ -10,6 +11,18 @@ import os
 
 
 def validate_book_order_details(order_num, title, author, isbn, year, quantity, cost):
+    """
+        A function that will check the book order details
+        first Variant, parameter, and return
+        :param order_num: the order number
+        :param title: the title of the book
+        :param author: the author of the book
+        :param isbn: the isbn of the book
+        :param year: the year the book was published
+        :param quantity: the quantity ordered in integer between 0 and 1000
+        :param cost: The cost of the book in floating point with 2 decimal places
+        :return: True if all parameters passed
+    """
     try:
         print("--Order Number-")
         order_num_converted = int(order_num)
@@ -67,14 +80,34 @@ def validate_book_order_details(order_num, title, author, isbn, year, quantity, 
 
 
 def calculate_per_book_cost(cost, quantity):
+    """
+        A function that will calculate the cost per book
+        Second Variant, parameter, and return
+        :param quantity: the quantity ordered in integer between 0 and 1000
+        :param cost: The cost of the book in floating point with 2 decimal places
+        :return: error or cost of book
+    """
     try:
         cost_per_book = cost / quantity
         return cost_per_book
     except ZeroDivisionError:
-        return "The quantity cannot be zero"
+        return "The quantity cannot be zero. No Books in Order."
 
 
 def write_book_order_details(filename, title, author, isbn, year, quantity, cost, unit_cost):
+    """
+        A function that will write the book order details in a file
+        Third Variant, and parameter
+        :param filename: the name of the file with <name>.txt
+        :param title: the title of the book
+        :param author: the author of the book
+        :param isbn: the isbn of the book
+        :param year: the year the book was published
+        :param quantity: the quantity ordered in integer between 0 and 1000
+        :param cost: The cost of the book in floating point with 2 decimal places
+        :param unit_cost: The cost to produce the product
+    """
+    print(filename)
     path = 'C:/Users/monik/Desktop/new4/Lesson 10 Exceptions/Lab10/' + filename
     isExist = os.path.exists(path)
     print(isExist)

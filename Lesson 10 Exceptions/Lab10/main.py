@@ -1,8 +1,8 @@
 """
 Lab 10 by Monika Szucs A00878763
-A script containing the main() function
+A script containing the main() function in main.py
 :author: Monika Szucs
-:date: November 15, 2021
+:date: November 22, 2021
 """
 
 from book_order_utils import validate_book_order_details, calculate_per_book_cost, write_book_order_details
