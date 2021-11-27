@@ -22,8 +22,7 @@ class Country:
         try:
             self._country_name = country_name
             self._capital_name = capital_name
-
-            if population < 200000:
+            if population < 2000000:
                 raise ValueError("Population " + str(population) + " is too low")
             else:
                 self._population = population
@@ -51,7 +50,10 @@ class Country:
             :param self: contains all the values of the car entered in by the user
             :return: the details of the car in a formatted sentence
         """
-        birth_population = self._population() + 1
+        #self._country_name
+        #self._capital_name
+        #self._population
+        birth_population = self._population + 1
         return birth_population
 
     def death(self, reduction):
