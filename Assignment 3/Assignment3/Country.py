@@ -52,7 +52,7 @@ class Country:
         """
         #self._country_name
         #self._capital_name
-        #self._population
+        print(self._population)
         birth_population = self._population + 1
         return birth_population
 
@@ -65,7 +65,7 @@ class Country:
             :param reduction: contains the reduced amount
             :return: the reduced price
         """
-        reduced_price = self._population() - 1
+        reduced_price = self._population - reduction
         return reduced_price
 
     def disaster(self, reduction):

@@ -24,11 +24,23 @@ def main():
 
         for country in all_countries:
             print(country)
-            print(country[2])
             population_number = country[2]
-            print(type(population_number))
-            country = Country(country[0], country[1], population_number)
-            print(country.birth())
+            country.pop(2)
+            grabbed_country = Country(country[0], country[1], population_number)
+            calculated_country = grabbed_country.birth()
+            country.append(calculated_country)
+            print(country)
+        print(all_countries)
+
+        for country in all_countries:
+            print(country)
+            population_number = country[2]
+            country.pop(2)
+            grabbed_country = Country(country[0], country[1], population_number)
+            calculated_country = grabbed_country.death(1)
+            country.append(calculated_country)
+            print(country)
+        print(all_countries)
 
     except ValueError as v:
         print(str(v))
