@@ -10,7 +10,7 @@ countries_and_capitals = (['Afghanistan', 'Kabul'], ['Albania', 'Tirana (Tirane)
 
 
 def main():
-    pass
+    print("I should not be called")
 
 
 if __name__ == "__main__":

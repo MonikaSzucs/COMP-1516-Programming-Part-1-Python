@@ -7,9 +7,14 @@ A script containing the main() function
 from Country import Country
 from data import countries_and_capitals
 
+
 def main():
-    country = Country("Austria", "Vienna", 1000)
-    print(country)
+    try:
+        country = Country("Austria", "Vienna", 1000)
+        print(country.print_details())
+    except ValueError as v:
+        print(str(v))
+
 
 
 if __name__ == "__main__":

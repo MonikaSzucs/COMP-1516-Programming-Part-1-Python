@@ -5,24 +5,30 @@ A script containing the main() function
 :date: November 23, 2021
 """
 
+
 class Country:
     """ Represents a car in a car lot """
+
     def __init__(self, country_name, capital_name, population):
         """ Initializes the car details """
         """
-            A function that will grab the values entered in by the user and organize it into its self container to be 
-            used later
+            A constructor that initializes the object
             First Variant and parameters
             :param self: set up OOP to call values later within each function
             :param make: Contains the make of the car
             :param model: Contains the Model name of the car
-            :param year: Contains the year of when the car was built
-            :param cost: Contains the cost of the car
-            :param price: Contains the initial price of the car
         """
-        self._country_name = country_name
-        self._capital_name = capital_name
-        self._population = population
+
+        try:
+            self._country_name = country_name
+            self._capital_name = capital_name
+
+            if population < 200000:
+                raise ValueError("Population " + str(population) + " is too low")
+            else:
+                self._population = population
+        except ValueError as e:
+            print(str(e))
 
     def print_details(self):
         """ Returns the projected profit """
@@ -32,7 +38,11 @@ class Country:
             :param self: contains all the values of the car entered in by the user 
             :return: the projected profit of the car
         """
-        return self._country_name - self._capital_name
+        try:
+            return "The capital of " + self._country_name + " (pop. " + str(
+                self._population) + ") is " + self._capital_name.upper()
+        except AttributeError as a:
+            print("There is an error with your input")
 
     def birth(self):
         """
@@ -76,9 +86,8 @@ class Country:
 
 
 def main():
-    pass
+    print("I should not be called")
 
 
 if __name__ == "__main__":
     main()
-
