@@ -78,9 +78,8 @@ class Country:
             :return: the reduced price
         """
         population = self._population
-        subtract_population = 100000000
-        if population > subtract_population:
-            population = population - subtract_population
+        if population >= reduction:
+            population = population - reduction
             return population
         else:
             population = 0

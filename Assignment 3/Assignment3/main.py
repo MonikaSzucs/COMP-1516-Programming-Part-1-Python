@@ -12,6 +12,8 @@ import random
 def main():
     try:
         all_countries = []
+
+        # Print Details
         for country in countries_and_capitals:
             print(country)
             random_value = random.randint(1000000, 1000000000)
@@ -21,30 +23,48 @@ def main():
             print(country.print_details())
             #input("Press enter to check the next country")
         print(all_countries)
+        print()
 
+        # Birth
         for country in all_countries:
             print(country)
             population_number = country[2]
             country.pop(2)
             grabbed_country = Country(country[0], country[1], population_number)
             calculated_country = grabbed_country.birth()
+            print(grabbed_country.print_details())
             country.append(calculated_country)
             print(country)
         print(all_countries)
+        print()
 
+        # Death
         for country in all_countries:
             print(country)
             population_number = country[2]
             country.pop(2)
             grabbed_country = Country(country[0], country[1], population_number)
             calculated_country = grabbed_country.death(1)
+            print(grabbed_country.print_details())
+            country.append(calculated_country)
+            print(country)
+        print(all_countries)
+        print()
+
+        # Disaster
+        for country in all_countries:
+            print(country)
+            population_number = country[2]
+            country.pop(2)
+            grabbed_country = Country(country[0], country[1], population_number)
+            calculated_country = grabbed_country.disaster(100000000)
+            print(grabbed_country.print_details())
             country.append(calculated_country)
             print(country)
         print(all_countries)
 
     except ValueError as v:
         print(str(v))
-
 
 
 if __name__ == "__main__":
