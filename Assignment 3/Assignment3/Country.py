@@ -50,9 +50,6 @@ class Country:
             :param self: contains all the values of the car entered in by the user
             :return: the details of the car in a formatted sentence
         """
-        #self._country_name
-        #self._capital_name
-        print(self._population)
         birth_population = self._population + 1
         return birth_population
 

@@ -17,11 +17,9 @@ def main():
         for country in countries_and_capitals:
             print(country)
             random_value = random.randint(1000000, 1000000000)
-            #random_value = random.randint(1000000, 2000000)
             all_countries.append([country[0], country[1], random_value])
             country = Country(country[0], country[1], random_value)
             print(country.print_details())
-            #input("Press enter to check the next country")
         print(all_countries)
         print()
 
@@ -32,9 +30,9 @@ def main():
             country.pop(2)
             grabbed_country = Country(country[0], country[1], population_number)
             calculated_country = grabbed_country.birth()
-            print(grabbed_country.print_details())
             country.append(calculated_country)
-            print(country)
+            grabbed_country_updated = Country(country[0], country[1], country[2])
+            print(grabbed_country_updated.print_details())
         print(all_countries)
         print()
 
