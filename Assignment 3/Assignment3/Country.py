@@ -1,8 +1,9 @@
 """
 Assignment 3 by Monika Szucs A00878763
-A script containing the main() function
+A script containing the main() function that should not be called, the class Country with functions __init__,
+print_details, birth, death, and disaster
 :author: Monika Szucs
-:date: November 23, 2021
+:date: November 28, 2021
 """
 
 
@@ -10,13 +11,14 @@ class Country:
     """ Represents a car in a car lot """
 
     def __init__(self, country_name, capital_name, population):
-        """ Initializes the car details """
+        """ Initializes the Country details """
         """
             A constructor that initializes the object
             First Variant and parameters
             :param self: set up OOP to call values later within each function
-            :param make: Contains the make of the car
-            :param model: Contains the Model name of the car
+            :param country_name: Contains a country name
+            :param capital_name: contains a capital name
+            :param population: Contains a population for the country/capital
         """
 
         try:
@@ -30,12 +32,12 @@ class Country:
             print(str(e))
 
     def print_details(self):
-        """ Returns the projected profit """
+        """ Returns the projected details """
         """
-            A function that will return the projected profit
+            A function that will return the projected details of the Country
             Second Variant, parameter, and return
-            :param self: contains all the values of the car entered in by the user 
-            :return: the projected profit of the car
+            :param self: will use the self items from the __init__ constructor 
+            :return: a sentence with the country, population, and capital
         """
         try:
             return "The capital of " + self._country_name + " (pop. " + str(
@@ -45,10 +47,10 @@ class Country:
 
     def birth(self):
         """
-            A function that will grab the details of the car and present it in a nicely formatted sentence
+            A function that will grab the population detail of the Country and add one to the population
             Third Variant, parameter, and return
-            :param self: contains all the values of the car entered in by the user
-            :return: the details of the car in a formatted sentence
+            :param self: will grab a value from the constructor
+            :return: the updated population for the country
         """
         birth_population = self._population + 1
         return birth_population
@@ -58,21 +60,21 @@ class Country:
             A function that will grab the details of the car and then calculate the profit minus the reduction
             to return the reduced price
             Fourth Variant, parameters, and return
-            :param self: contains all the values of the car entered in by the user
-            :param reduction: contains the reduced amount
-            :return: the reduced price
+            :param self: allows the calling of the constructor
+            :param reduction: contain the amount (1) by which the population will decrease
+            :return: the reduced population by 1
         """
         reduced_price = self._population - reduction
         return reduced_price
 
     def disaster(self, reduction):
         """
-            A function that will grab the details of the car and then calculate the profit minus the reduction
-            to return the reduced price
+            A function that will remove 100 million from a population that is above 100 million or make the population
+            set to 0 if it is below 100 million
             Fourth Variant, parameters, and return
-            :param self: contains all the values of the car entered in by the user
-            :param reduction: contains the reduced amount
-            :return: the reduced price
+            :param self: allows the calling of the constructor
+            :param reduction: contains a reduced amount (100 million) from a disaster
+            :return: the reduced population based on a disaster
         """
         population = self._population
         if population >= reduction:

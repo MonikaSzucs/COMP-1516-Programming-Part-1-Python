@@ -1,8 +1,8 @@
 """
 Assignment 3 by Monika Szucs A00878763
-A script containing the main() function
+A script containing the main() function that does not get called and a tuple with countries_and_capitals
 :author: Monika Szucs
-:date: November 23, 2021
+:date: November 28, 2021
 """
 
 
